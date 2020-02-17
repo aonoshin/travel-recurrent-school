@@ -1,0 +1,31 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2>Travel Recurrent School</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <li>／</li>
+            <li><%= link_to "ABOUT", "/" %></li>
+            <li>／</li>
+            <li><%= link_to "EVENT", "/" %></li>
+            <li>／</li>
+            <li><%= link_to "NEWS", "/" %></li>
+            <li>／</li>
+            <li><%= link_to "JOIN", "/" %></li>
+            <li>／</li>
+            <li><%= link_to "CONTACT", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", "/" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2>Travel Recurrent School</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", "/" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="faculty-edit">
+    <div class="faculty-edit-title">
+        <h1>学部の編集</h1>
+    </div>
+    <div class="faculty-edit-main">
+        <%= form_for @faculty do |f| %>
+          <!--< f.hidden_field :user_id, require: true, :value => current_user.id %>-->
+          <p>－学部名－</p>
+          <span>※必須</span><br>
+          <%= f.text_field :name, :class => "faculty-name" %>
+          <p>－イメージ写真－</p>
+          <span>※必須</span><br>
+          <%= f.file_field :image, :class => "faculty-image" %>
+          <p>－説明－</p>
+          <span>※必須</span><br>
+          <%= f.text_area :content, :class => "faculty-content" %>
+          <ul class="faculty-check-box">
+              <li>－掲載の有無－</li>
+              <span>※掲載する場合はチェックを入れてください。</span><br>
+              <li><%= label_tag :release, "掲載する" %></li>
+              <li><%= f.check_box :release, {}, "1", "0" %></li>
+          </ul>
+          <div class="faculty-edit-btn-area">
+              <ul>
+                  <li><%= f.submit "変更する", :class => "faculty-edit-btn", data: {confirm: "変更してもよろしいですか？"} %></li>
+                  <li><%= link_to "一覧へ戻る", "/faculties" %></li>
+              </ul>
+          </div>
+        <% end %>
+    </div>
+</div>

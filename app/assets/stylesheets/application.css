@@ -1,0 +1,270 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*[共通]------------------------------------------------------------------------------------*/
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.notice{
+    background-color:#FFAD90;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+.notice p{
+    color:#fff;
+    text-shadow:1px 1px 1px #00f;
+    margin:0;
+    padding:15px;
+}
+
+.alert{
+    background-color:#FFFFCC;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+.alert p{
+    color:#f00;
+    text-shadow:1px 1px 1px #fff;
+    margin:0;
+    padding:15px;
+}
+
+.clearfix::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.footer-fix{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+
+
+/*[共通ここまで]-------------------------------------------------------------------------------*/
+
+
+
+
+/*ここからスマホ用サイズ-----------------------------------------------------------------------------*/
+@media(max-width:767px){
+
+
+
+
+
+
+
+}
+/*ここまでがスマホ用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからタブレット用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:768px) and (max-width:1024px){
+
+
+
+
+
+}
+/*ここまでがタブレット用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからPC用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:1025px){
+
+
+/*[navbarエリア]*/
+
+.navbar-top{
+    padding:0;
+    margin:0;
+    border-bottom:2px double #000;
+    background-color:#fff;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.navbar{
+    padding:0;
+    margin:0;
+    border-bottom:2px double #000;
+    background-color:#fff;
+    top:0;
+    position:sticky;
+}
+
+.navbar-logo{
+    padding:40px;
+    margin:0;
+    background-color:#ff0;
+    float:left;
+}
+
+.navbar-logo p{
+    padding:0;
+    margin:0;
+}
+
+.navbar-title{
+    padding:0;
+    margin:20px 0 0 10px;
+    float:left;
+    text-align:center;
+}
+
+.navbar-title p{
+    padding:0;
+    margin:0;
+}
+
+.navbar-title h2{
+    padding:0;
+    margin:0;
+}
+
+.navbar-list ul{
+    padding:0;
+    margin:50px 0 0;
+    list-style:none;
+    float:right;
+}
+
+.navbar-list li{
+    padding:0;
+    margin:0 10px;
+    display:inline-block;
+}
+
+.navbar-list li:last-of-type{
+    margin-right:30px;
+}
+
+.navbar-list a{
+    text-decoration:none;
+    color:#bbb;
+    font-weight:bold;
+}
+
+.navbar-list a:hover{
+    color:#000;
+    text-decoration:underline;
+}
+
+.toggle-btn{
+    padding:0;
+    margin:0;
+    float:right;
+    display:none;
+}
+
+.toggle-btn i{
+    font-size:30px;
+    cursor:pointer;
+    color:#aaa;
+}
+
+.toggle-btn i:hover{
+    color:#000;
+}
+
+
+/*[footerエリア]*/
+
+.footer{
+    padding:0;
+    margin:0;
+    background-color:#ccc;
+    margin-top:auto;
+}
+
+.footer-logo{
+    float:left;
+    width:45%;
+    height:200px;
+}
+
+.footer-logo p{
+    padding:0;
+    margin:0 auto;
+    width:50%;
+    height:200px;
+    background-color:#ff0;
+}
+
+.footer-text{
+    float:left;
+    width:30%;
+    height:100px;
+    text-align:center;
+    margin:50px 50px 0 0;
+    color:#fff;
+}
+
+.footer-text h2{
+    padding:0;
+    margin:0;
+}
+
+.footer-text p{
+    padding:0;
+    margin:0;
+}
+
+.footer-list{
+    text-align:center;
+}
+
+.footer-list ul{
+    padding:0;
+    margin:0 0 30px 0;
+    list-style:none;
+    font-weight:bold;
+}
+
+.footer-list li{
+    display:inline-block;
+    margin:0 40px;
+}
+
+.footer-list a{
+    color:#fff;
+    text-shadow:1px 1px 0 #000;
+}
+
+.footer-list a:hover{
+    color:#000;
+}
+
+
+}
+/*ここまでがPC用サイズ-----------------------------------------------------------------------------*/

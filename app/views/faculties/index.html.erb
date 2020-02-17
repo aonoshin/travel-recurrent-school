@@ -1,0 +1,54 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2>Travel Recurrent School</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", "/" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="faculty-index">
+    <div class="faculty-index-title">
+        <h1>学部一覧（編集用）</h1>
+    </div>
+    <div class="faculty-index-new-btn">
+        <%= link_to "新規作成", "/faculties/new" %>
+    </div>
+    <div class="faculty-index-main">
+        <!--< if @faculty.present? %>-->
+          <% @faculties.each do |f| %>
+            <div class="faculty-index-content">
+                <div class="faculty-index-release">
+                    <%= f.release %>
+                </div>
+                <div class="faculty-index-name">
+                    <%= f.name %>
+                </div>
+                <div class="faculty-index-image">
+                    <%= image_tag f.image %>
+                </div>
+                <div class="faculty-index-text">
+                    <%= f.content %>
+                </div>
+            </div>
+          <% end %>
+        <!--< else %>-->
+        <!--  <div class="faculty-index-empty">-->
+        <!--      <p>まだひとつも作成されていません。</p>-->
+        <!--  </div>-->
+        <!--< end %>-->
+    </div>
+</div>

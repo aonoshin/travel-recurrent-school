@@ -1,0 +1,244 @@
+/*ここからスマホ用サイズ-----------------------------------------------------------------------------*/
+@media(max-width:767px){
+
+
+
+
+
+
+
+}
+/*ここまでがスマホ用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからタブレット用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:768px) and (max-width:1024px){
+
+
+
+
+
+}
+/*ここまでがタブレット用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからPC用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:1025px){
+
+// [indexエリア]
+
+.event-index-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.event-index-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.event-index-new-btn{
+    margin:50px 0 0 0;
+    text-align:center;
+}
+
+.event-index-new-btn a{
+    padding:10px 100px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+}
+
+.event-index-new-btn a:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.event-index-empty{
+    text-align:center;
+    margin:50px 0 0 0;
+}
+
+.event-index-empty p{
+    color:#f00;
+    font-weight:bold;
+}
+
+.event-index-content{
+    padding:0;
+    margin:0;
+    width:30%;
+}
+
+
+
+
+
+
+// [newエリア]
+
+.event-new-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.event-new-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.event-new-main{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#000080;
+}
+
+.event-new-main p{
+    padding:0;
+    margin:50px 0 0 0;
+}
+
+.event-new-main span{
+    padding:0;
+    margin:0;
+    color:#f00
+}
+
+.event-new-main ul{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+}
+
+.event-name, .event-place{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.event-day, .event-starttime, .event-endtime{
+    border-radius:5px;
+    outline:none;
+}
+
+.event-new-btn-area{
+    padding:0;
+    margin:0;
+}
+
+.event-new-btn{
+    padding:5px 70px;
+    margin:20px 0;
+    color:#fff;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+}
+
+.event-new-btn:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.event-new-btn-area a:last-of-type:hover{
+    opacity:0.3;
+}
+
+
+
+
+
+// [editエリア]
+
+.event-edit-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.event-edit-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.event-edit-main{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#000080;
+}
+
+.event-edit-main p{
+    padding:0;
+    margin:50px 0 0 0;
+}
+
+.event-edit-main span{
+    padding:0;
+    margin:0;
+    color:#f00
+}
+
+.event-edit-main ul{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+}
+
+.event-name{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.event-content{
+    width:40%;
+    height:70px;
+    border-radius:5px;
+    outline:none;
+}
+
+.event-edit-btn-area{
+    padding:0;
+    margin:0;
+}
+
+.event-edit-btn{
+    padding:5px 70px;
+    margin:20px 0;
+    color:#fff;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+}
+
+.event-edit-btn:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.event-edit-btn-area a:last-of-type:hover{
+    opacity:0.3;
+}
+
+}
+/*ここまでがPC用サイズ-----------------------------------------------------------------------------*/

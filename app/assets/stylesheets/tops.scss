@@ -1,0 +1,243 @@
+/*ここからスマホ用サイズ-----------------------------------------------------------------------------*/
+@media(max-width:767px){
+
+
+
+
+
+
+
+}
+/*ここまでがスマホ用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからタブレット用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:768px) and (max-width:1024px){
+
+
+
+
+
+}
+/*ここまでがタブレット用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからPC用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:1025px){
+
+#top-image-slide ul{
+    padding:0;
+    margin:0;
+    position:relative;
+}
+
+#top-image-slide li{
+    padding:0;
+    margin:0;
+    position:absolute;
+    width:100%;
+}
+
+#top-image-slide img{
+    width:100%;
+    height:750px;
+}
+
+#top-image-btn{
+    text-align:center;
+    margin-top:750px;
+}
+
+#top-image-btn ul li a{
+    text-indent:-9999px;
+    text-decoration:none;
+    display:block;
+    width:14px;
+    height:14px;
+    border-radius:7px;
+    background-color:#a8dcdb;
+}
+
+#top-image-btn ul{
+    list-style:none;
+}
+
+#top-image-btn li{
+    display:inline-block;
+    margin:0 3px;
+}
+
+
+
+
+
+.salon-introduction{
+    padding:0;
+    margin:0;
+    background-color:#fff;
+    text-align:center;
+    height:600px;
+}
+
+.salon-introduction-title{
+    padding:0;
+    margin:50px 0;
+}
+
+.salon-introduction-title p{
+    padding:0;
+    margin:0;
+    font-weight:bold;
+}
+
+.salon-introduction-title h1{
+    padding:0;
+    margin:0;
+}
+
+.salon-introduction-text h3{
+    line-height:1.8;
+}
+
+.salon-introduction-text span{
+    font-size:23px;
+}
+
+.salon-about{
+    text-align:center;
+    background-color:#eee;
+    height:150px;
+}
+
+.salon-about h1{
+    padding:0;
+    margin:50px auto;
+    width:13%;
+    color:#fff;
+    text-shadow:3px 3px 0 #000;
+    border-left:3px double #000;
+    border-right:3px double #000;
+}
+
+.salon-about-1{
+    padding:0;
+    margin:0;
+    background-color:#eee;
+    height:450px;
+}
+
+.salon-about-1 h2{
+    padding:0 0 40px 0;
+    text-align:center;
+    color:#99ffff;
+    text-shadow:2px 2px 0 #000;
+}
+
+.salon-about-1-text{
+    padding:0;
+    margin:0 0 0 200px;
+    width:40%;
+    height:250px;
+    text-align:center;
+    float:left;
+    border-top:1px dotted #000;
+    border-bottom:1px dotted #000;
+}
+
+.salon-about-1-text p{
+    padding:0;
+    margin:40px 0 0 0;
+    font-size:20px;
+    font-weight:bold;
+    line-height:1.8;
+}
+
+.salon-about-1-text span{
+    padding:0;
+    margin:0;
+    font-size:15px;
+    color:#000080;
+}
+
+.salon-about-1-image{
+    padding:0;
+    margin:0;
+    float:left;
+    width:39%;
+    height:250px;
+}
+
+.salon-about-1-image img{
+    padding:0;
+    margin:0;
+    width:70%;
+    height:250px;
+    border-radius:10px;
+}
+
+
+
+
+.salon-about-2{
+    padding:50px 0 0 0;
+    margin:0;
+    background-color:#fff;
+    height:450px;
+}
+
+.salon-about-2 h2{
+    padding:0 0 40px 0;
+    text-align:center;
+    color:#66ffcc;
+    text-shadow:2px 2px 0 #000;
+}
+
+.salon-about-2-text{
+    padding:0;
+    margin:0 100px 0 0;
+    width:45;
+    height:250px;
+    text-align:center;
+    float:right;
+    border-top:1px dotted #000;
+    border-bottom:1px dotted #000;
+}
+
+.salon-about-2-text p{
+    padding:0;
+    margin:20px 0 0 0;
+    font-size:20px;
+    font-weight:bold;
+    line-height:1.8;
+}
+
+.salon-about-2-text span{
+    padding:0;
+    margin:0;
+    background-color:#ffff33;
+}
+
+.salon-about-2-image{
+    padding:0;
+    margin:0;
+    float:right;
+    width:39%;
+    height:250px;
+}
+
+.salon-about-2-image img{
+    padding:0;
+    margin:0 0 0 140px;
+    width:70%;
+    height:250px;
+    border-radius:10px;
+}
+
+}
+/*ここまでがPC用サイズ-----------------------------------------------------------------------------*/

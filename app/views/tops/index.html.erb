@@ -1,0 +1,124 @@
+<div id="top-image-slide">
+    <ul>
+        <li><img src="/assets/travel-recurrent-school.jpg"></li>
+        <li><img src="/assets/top-slide-2.jpg"></li>
+        <li><img src="/assets/top-slide-3.jpg"></li>
+        <li><img src="/assets/top-slide-4.jpg"></li>
+        <li><img src="/assets/top-slide-5.jpg"></li>
+    </ul>
+</div>
+<div id="top-image-btn">
+    <ul>
+        <li><a href="#" class="target">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+    </ul>
+</div>
+
+<div class="navbar-top">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2>Travel Recurrent School</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <li>／</li>
+            <li><%= link_to "ABOUT", "/" %></li>
+            <li>／</li>
+            <li><%= link_to "EVENT", "/" %></li>
+            <li>／</li>
+            <li><%= link_to "NEWS", "/" %></li>
+            <li>／</li>
+            <li><%= link_to "JOIN", "/" %></li>
+            <li>／</li>
+            <li><%= link_to "CONTACT", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", "/" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="salon-introduction">
+    <div class="salon-introduction-title">
+        <p>トラベル　リカレント　スクール</p>
+        <h1>Travel Recurrent School</h1>
+        <p>へようこそ！</p>
+    </div>
+    <div class="salon-introduction-text">
+        <h3>当スクールは<br>
+        旅が好きすぎてたまらない旅行業界在籍経験の学長が<br>
+        ”旅好きが集まり旅に関する学びや経験や<br>
+        仲間が得られる環境を築こう”<br>
+        という意思のもと開校された<br>
+        "年齢" "性別" "国籍" "職業" 関係無く<br>
+        ボーダレスでいつでも自由に入学できる<br>
+        <span>旅好きな人のための旅に特化した旅の専門学校です！</span></h3>
+    </div>
+</div>
+
+<div class="salon-about">
+    <h1>ABOUT</h1>
+</div>
+
+<div class="salon-about-1">
+    <h2>オンライン上で気軽にメンバー交流＆情報共有♪</h2>
+    <div class="cleafix">
+      <div class="salon-about-1-text">
+        <p>当スクールは主にオンライン上での活動になります。<br>
+        活動拠点は東京ですが<br>
+        オンライン上であれば日本中、世界中どこにいても<br>
+        気軽にいつでも交流や情報共有することができます！<br>
+        <span>※主な活用ツール：FaceBook（グループ機能）</span></p>
+      </div>
+      <div class="salon-about-1-image">
+        <img src="/assets/salon-about-1.jpg">
+      </div>
+    </div>
+</div>
+
+<div class="salon-about-2">
+    <h2>定期的にオフライン活動も実施♪</h2>
+    <div class="cleafix">
+        <div class="salon-about-2-text">
+            <p>旅好きな人が集う環境だからこそ<br>
+            オンラインだけではなく<br>
+            <span>オフラインで直接メンバー同士が交流できる機会を<br>
+            定期的に設けています</span>！<br>
+            「オフ会」「勉強会」「旅行」など交流の機会はさまざま。<br>
+            ぜひオフラインも活用して、素敵な旅仲間を見つけてください♪</p>
+        </div>
+        <div class="salon-about-2-image">
+            <img src="/assets/salon-about-2.jpg">
+        </div>
+    </div>
+</div>
+
+<div class="salon-about-3">
+    <h2>好きなジャンルだけを学べる ”学部制度” ♪</h2>
+    <div class="cleafix">
+        <div class="salon-about-3-text">
+            <p>一言に「旅行」と言っても学びたいジャンルは人それぞれ。<br>
+            ジャンル別に学部という形式で分けてみました！<br>
+            入学したら好みの学部に自由に入ってください♪</p>
+        </div>
+        <div class="salon-about-3-faculty">
+            <!--< @faculties.each do |f| %>-->
+            <!--< end %>-->
+        </div>
+    </div>
+</div>
+
+<div class="salon-about-4">
+    <h2>入学メリット♪</h2>
+</div>

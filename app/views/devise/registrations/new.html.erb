@@ -1,0 +1,63 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p><br>
+        <h2>Travell Recurrent School</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", "/" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="sign-up-title">
+  <h1>新規登録フォーム</h1>
+</div>
+
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+<div class="sign-up-main">
+  <div class="field-name">
+    <%= f.label :－名前－ %><br>
+    <span>※必須[25文字以内]</span><br>
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", :class => "sign-up-text" %>
+  </div>
+
+  <div class="field-email">
+    <%= f.label :－メールアドレス－ %><br>
+    <span>※必須</span><br>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "sign-up-text" %>
+  </div>
+
+  <div class="field-password">
+    <%= f.label :－パスワード－ %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> 文字以上)</em><br>
+    <span>※必須</span><br>
+    <% end %>
+    <%= f.password_field :password, autocomplete: "new-password", :class => "sign-up-text" %>
+  </div>
+
+  <div class="field-password">
+    <%= f.label :－パスワード（確認）－ %><br>
+    <span>※必須</span><br>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", :class => "sign-up-text" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "登録する", :class => "sign-up-btn" , data: {confirm: '登録してもよろしいでしょうか？'} %>
+  </div>
+</div>
+<% end %>

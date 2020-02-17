@@ -1,0 +1,62 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2>Travel Recurrent School</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", "/" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="event-edit">
+    <div class="event-edit-title">
+        <h1>学部の新規立ち上げ</h1>
+    </div>
+    <div class="event-edit-main">
+        <%= form_for @event do |e| %>
+          <!--< e.hidden_field :user_id, require: true, :value => current_user.id %>-->
+          <p>－イベント名－</p>
+          <span>※必須</span><br>
+          <%= e.text_field :title, :class => "event-name" %>
+          <p>－イメージ写真－</p>
+          <span>※必須</span><br>
+          <%= e.file_field :image, :class => "event-image" %>
+          <p>－会場－</p>
+          <span>※必須</span><br>
+          <%= e.text_field :place, :class => "event-place" %>
+          <p>開催日</p>
+          <span>※必須</span><br>
+          <%= e.date_field :day, :class => "event-day" %>
+          <p>開始時間</p>
+          <span>※必須</span><br>
+          <%= e.time_field :starttime, :class => "event-starttime" %>
+          <p>終了時間</p>
+          <span>※必須</span><br>
+          <%= e.time_field :endtime, :class => "event-endtime" %>
+          <ul class="event-check-box">
+              <li>－掲載の有無－</li>
+              <span>※掲載する場合はチェックを入れてください。</span><br>
+              <li><%= label_tag :release, "掲載する" %></li>
+              <li><%= e.check_box :release, {}, "1", "0" %></li>
+          </ul>
+          <div class="event-edit-btn-area">
+              <ul>
+                  <li><%= e.submit "変更する", :class => "event-edit-btn", data: {confirm: "作成してもよろしいですか？"} %></li>
+                  <li><%= link_to "一覧へ戻る", "/events" %></li>
+              </ul>
+          </div>
+        <% end %>
+    </div>
+</div>

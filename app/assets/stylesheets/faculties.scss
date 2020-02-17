@@ -1,0 +1,246 @@
+/*ここからスマホ用サイズ-----------------------------------------------------------------------------*/
+@media(max-width:767px){
+
+
+
+
+
+
+
+}
+/*ここまでがスマホ用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからタブレット用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:768px) and (max-width:1024px){
+
+
+
+
+
+}
+/*ここまでがタブレット用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからPC用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:1025px){
+
+// [indexエリア]
+
+.faculty-index-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.faculty-index-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.faculty-index-new-btn{
+    margin:50px 0 0 0;
+    text-align:center;
+}
+
+.faculty-index-new-btn a{
+    padding:10px 100px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+}
+
+.faculty-index-new-btn a:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.faculty-index-empty{
+    text-align:center;
+    margin:50px 0 0 0;
+}
+
+.faculty-index-empty p{
+    color:#f00;
+    font-weight:bold;
+}
+
+.faculty-index-content{
+    padding:0;
+    margin:0;
+    width:30%;
+}
+
+
+
+
+
+
+// [newエリア]
+
+.faculty-new-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.faculty-new-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.faculty-new-main{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#000080;
+}
+
+.faculty-new-main p{
+    padding:0;
+    margin:50px 0 0 0;
+}
+
+.faculty-new-main span{
+    padding:0;
+    margin:0;
+    color:#f00
+}
+
+.faculty-new-main ul{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+}
+
+.faculty-name{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.faculty-content{
+    width:40%;
+    height:70px;
+    border-radius:5px;
+    outline:none;
+}
+
+.faculty-new-btn-area{
+    padding:0;
+    margin:0;
+}
+
+.faculty-new-btn{
+    padding:5px 70px;
+    margin:20px 0;
+    color:#fff;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+}
+
+.faculty-new-btn:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.faculty-new-btn-area a:last-of-type:hover{
+    opacity:0.3;
+}
+
+
+
+
+
+// [editエリア]
+
+.faculty-edit-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.faculty-edit-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.faculty-edit-main{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#000080;
+}
+
+.faculty-edit-main p{
+    padding:0;
+    margin:50px 0 0 0;
+}
+
+.faculty-edit-main span{
+    padding:0;
+    margin:0;
+    color:#f00
+}
+
+.faculty-edit-main ul{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+}
+
+.faculty-name{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.faculty-content{
+    width:40%;
+    height:70px;
+    border-radius:5px;
+    outline:none;
+}
+
+.faculty-edit-btn-area{
+    padding:0;
+    margin:0;
+}
+
+.faculty-edit-btn{
+    padding:5px 70px;
+    margin:20px 0;
+    color:#fff;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+}
+
+.faculty-edit-btn:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.faculty-edit-btn-area a:last-of-type:hover{
+    opacity:0.3;
+}
+
+}
+/*ここまでがPC用サイズ-----------------------------------------------------------------------------*/

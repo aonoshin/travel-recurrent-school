@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel Recurrent School</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/c5427e1216.js" crossorigin="anonymous"></script>
+    
+  </head>
+
+  <body class="footer-fix">
+    
+    <!--< render "layouts/navbar" %>-->
+    
+    <% if notice %>
+      <div class="notice">
+        <p><%= notice %></p>
+      </div>
+    <% end %>
+    
+    <% if alert %>
+      <div class="alert">
+        <p><%= alert %></p>
+      </div>
+    <% end %>
+    
+    <%= yield %>
+    
+    <%= render "layouts/footer" %>
+    
+  </body>
+</html>

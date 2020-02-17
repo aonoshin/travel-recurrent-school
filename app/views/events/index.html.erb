@@ -1,0 +1,60 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2>Travel Recurrent School</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", "/" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="event-index">
+    <div class="event-index-title">
+        <h1>イベント一覧（編集用）</h1>
+    </div>
+    <div class="event-index-new-btn">
+        <%= link_to "新規作成", "/events/new" %>
+    </div>
+    <div class="event-index-main">
+        <!--< if @event.present? %>-->
+          <% @events.each do |e| %>
+            <div class="event-index-content">
+                <div class="event-index-release">
+                    <%= e.release %>
+                </div>
+                <div class="event-index-title">
+                    <%= e.title %>
+                </div>
+                <div class="event-index-image">
+                    <%= image_tag e.image %>
+                </div>
+                <div class="event-index-place">
+                    <%= e.place %>
+                </div>
+                <div class="event-index-time">
+                    <ul>
+                        <li><%= e.starttime %></li>
+                        <li><%= e.endtime %></li>
+                    </ul>
+                </div>
+            </div>
+          <% end %>
+        <!--< else %>-->
+        <!--  <div class="event-index-empty">-->
+        <!--      <p>まだひとつも作成されていません。</p>-->
+        <!--  </div>-->
+        <!--< end %>-->
+    </div>
+</div>

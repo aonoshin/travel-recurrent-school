@@ -1,0 +1,48 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2>Travel Recurrent School</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", "/" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="information-index">
+    <div class="information-index-title">
+        <h1>お知らせ一覧（編集用）</h1>
+    </div>
+    <div class="information-index-new-btn">
+        <%= link_to "新規作成", "/informations/new" %>
+    </div>
+    <div class="information-index-main">
+        <!--< if @information.present? %>-->
+          <% @informations.each do |i| %>
+            <div class="information-index-content">
+                <div class="information-index-release">
+                    <%= i.release %>
+                </div>
+                <div class="information-index-text">
+                    <%= i.content %>
+                </div>
+            </div>
+          <% end %>
+        <!--< else %>-->
+        <!--  <div class="information-index-empty">-->
+        <!--      <p>まだひとつも作成されていません。</p>-->
+        <!--  </div>-->
+        <!--< end %>-->
+    </div>
+</div>

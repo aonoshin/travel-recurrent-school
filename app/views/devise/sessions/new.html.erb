@@ -1,0 +1,55 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p><br>
+        <h2>Travell Recurrent School</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", "/" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+
+<div class="sign-in-title">
+  <h1>ログインフォーム</h1>
+</div>
+
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+<div class="sign-in-main">
+  
+  <div class="field-email">
+    <%= f.label :メールアドレス %><br/>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "sign-in-text" %>
+  </div>
+
+  <div class="field-password">
+    <%= f.label :パスワード %><br/>
+    <%= f.password_field :password, autocomplete: "current-password", :class => "sign-in-text" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field-remember">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "ログイン", :class => "sign-in-btn" %>
+  </div>
+  
+</div>
+<% end %>
