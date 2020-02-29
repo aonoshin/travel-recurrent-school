@@ -60,7 +60,7 @@ $(window).on('turbolinks:load', function(){
 
 // [スクロールするとcss効果が加わる機能]
 $(document).on('turbolinks:load', window).scroll(function(){
-    $('.salon-introduction-title, .salon-introduction-title h1, .salon-introduction-title span, .salon-introduction-text span, .salon-about h1, .salon-about-1, .salon-about-2, .salon-about-2-text span, .salon-about-3 h2, .salon-about-3-text, .top-faculty, .salon-about-4 h1, .top-event, .salon-about-4-text, .salon-about-5 h1, .top-news, .salon-about-6 h1, .top-fee, .salon-about-6-enroll, .salon-about-7-p, .top-profile span, .salon-about-8-p, .enroll-area, .contact-area, .wanted-area, .salon-about-8-text').each(function(){
+    $('.salon-introduction-title, .salon-introduction-title h1, .salon-introduction-title span, .salon-introduction-airplane img, .salon-introduction-text span, .salon-about h1, .salon-about-1, .salon-about-2, .salon-about-2-text span, .salon-about-3 h2, .salon-about-3-text, .top-faculty, .salon-about-4 h1, .top-event, .salon-about-4-text, .salon-about-5 h1, .top-news, .salon-about-6 h1, .top-fee, .salon-about-6-enroll, .salon-about-7-p, .top-profile span, .salon-about-8-p, .enroll-area, .contact-area, .wanted-area, .salon-about-8-text').each(function(){
         let dummy = $(this).offset().top,
             scroll = $(window).scrollTop(),
             windowHeight = $(window).height(); 

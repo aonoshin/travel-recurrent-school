@@ -48,8 +48,9 @@
     padding:0;
     margin:0;
     color:#ffff33;
-    text-shadow:1px 1px 0 #000080;
-    font-size:13px;
+    font-weight:bold;
+    font-size:12px;
+    text-shadow:1px 1px 0 #000;
 }
 
 .top-text-position h3{
@@ -90,7 +91,7 @@
 
 #dummy-top{
     padding:0;
-    margin:330px 0 0 0;
+    margin:300px 0 0 0;
 }
 
 
@@ -112,7 +113,7 @@
     transform:translate(0, 70px);
     // ---------------------------------------
     padding:0;
-    margin:50px 0;
+    margin:50px 0 0;
 }
 
 .salon-introduction-title.scroll{
@@ -157,6 +158,27 @@
     color:#ffff33;
     text-shadow:5px 5px 2px #000080;
     font-size:40px;
+    // ---------------------------------------
+}
+
+.salon-introduction-airplane{
+    padding:0;
+    margin:0;
+}
+
+.salon-introduction-airplane img{
+    // jQuert仕様-----------------------------
+    transition:0.7s;
+    transform:translate(-150px, 80px);
+    opacity:0;
+    // ---------------------------------------
+    width:15%;
+}
+
+.salon-introduction-airplane img.scroll{
+    // jQuert仕様-----------------------------
+    transform:translate(0, 0);
+    opacity:1;
     // ---------------------------------------
 }
 
@@ -557,10 +579,9 @@
     padding:10px 0;
     margin:0;
     text-align:center;
-    color:#99ffff;
+    color:#000080;
     font-weight:bold;
     font-size:15px;
-    text-shadow:1px 1px 0 #080000;
     background-color:#eee;
 }
 
@@ -1224,7 +1245,8 @@
     padding:0;
     margin:0;
     color:#ffff33;
-    text-shadow:1px 1px 0 #000080;
+    font-weight:bold;
+    text-shadow:1px 1px 0 #000;
 }
 
 .top-text-position h3{
@@ -1286,7 +1308,7 @@
     transform:translate(0, 70px);
     // ---------------------------------------
     padding:0;
-    margin:50px 0;
+    margin:50px 0 0;
 }
 
 .salon-introduction-title.scroll{
@@ -1331,6 +1353,27 @@
     color:#ffff33;
     text-shadow:5px 5px 2px #000080;
     font-size:50px;
+    // ---------------------------------------
+}
+
+.salon-introduction-airplane{
+    padding:0;
+    margin:0;
+}
+
+.salon-introduction-airplane img{
+    // jQuert仕様-----------------------------
+    transition:0.7s;
+    transform:translate(-200px, 80px);
+    opacity:0;
+    // ---------------------------------------
+    width:15%;
+}
+
+.salon-introduction-airplane img.scroll{
+    // jQuert仕様-----------------------------
+    transform:translate(0, 0);
+    opacity:1;
     // ---------------------------------------
 }
 
@@ -1726,10 +1769,9 @@
     padding:10px 0;
     margin:0;
     text-align:center;
-    color:#99ffff;
+    color:#000080;
     font-weight:bold;
     font-size:15px;
-    text-shadow:1px 1px 0 #080000;
     background-color:#eee;
 }
 
@@ -2392,7 +2434,8 @@
     padding:0;
     margin:0;
     color:#ffff33;
-    text-shadow:1px 1px 0 #000080;
+    font-weight:bold;
+    text-shadow:1px 1px 0 #000;
 }
 
 .top-text-position h3{
@@ -2456,7 +2499,7 @@
 
 #dummy-top{
     padding:0;
-    margin:640px 0 0 0;
+    margin:620px 0 0 0;
 }
 
 
@@ -2477,7 +2520,7 @@
     transform:translate(-70px, 0);
     // ---------------------------------------
     padding:0;
-    margin:50px 0;
+    margin:50px 0 0;
 }
 
 .salon-introduction-title.scroll{
@@ -2522,6 +2565,27 @@
     color:#ffff33;
     text-shadow:5px 5px 2px #000080;
     font-size:50px;
+    // ---------------------------------------
+}
+
+.salon-introduction-airplane{
+    padding:0;
+    margin:0;
+}
+
+.salon-introduction-airplane img{
+    // jQuert仕様-----------------------------
+    transition:0.7s;
+    transform:translate(-200px, 80px);
+    opacity:0;
+    // ---------------------------------------
+    width:15%;
+}
+
+.salon-introduction-airplane img.scroll{
+    // jQuert仕様-----------------------------
+    transform:translate(0, 0);
+    opacity:1;
     // ---------------------------------------
 }
 
@@ -2906,10 +2970,9 @@
     padding:10px 0;
     margin:0;
     text-align:center;
-    color:#99ffff;
+    color:#000080;
     font-weight:bold;
     font-size:15px;
-    text-shadow:1px 1px 0 #080000;
     background-color:#eee;
 }
 
