@@ -14,7 +14,7 @@
             <li><%= link_to "TOP", "/" %></li>
             <% if user_signed_in? %>
               <li>／</li>
-              <li><%= link_to "LOG AUTO", "/" %></li>
+              <li><%= link_to "LOG AUTO", destroy_user_session_path, :method => "delete", data: {confirm:"ログアウトしますか？"} %></li>
             <% end %>
         </ul>
     </div>
@@ -28,7 +28,7 @@
         <%= link_to "新規作成", "/informations/new" %>
     </div>
     <div class="information-index-main">
-        <!--< if @information.present? %>-->
+        <% if @informations.present? %>
           <% @informations.each do |i| %>
             <div class="information-index-content">
                 <div class="information-index-release">
@@ -39,10 +39,10 @@
                 </div>
             </div>
           <% end %>
-        <!--< else %>-->
-        <!--  <div class="information-index-empty">-->
-        <!--      <p>まだひとつも作成されていません。</p>-->
-        <!--  </div>-->
-        <!--< end %>-->
+        <% else %>
+          <div class="information-index-empty">
+              <p>まだひとつも作成されていません。</p>
+          </div>
+        <% end %>
     </div>
 </div>

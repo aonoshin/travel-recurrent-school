@@ -1,5 +1,8 @@
 class EventsController < ApplicationController
   
+  before_action :authenticate_user!
+  before_action :admin_check
+  
   def index
     @events = Event.all.order(day: :asc)
   end
@@ -25,7 +28,7 @@ class EventsController < ApplicationController
   
   def edit
     @event = Event.find(params[:id])
-    if @event.id == current_user.id
+    if @event.user_id == current_user.id
     else
       flash[:alert] = "権限がありません。"
       redirect_to "/events"
@@ -39,25 +42,24 @@ class EventsController < ApplicationController
       redirect_to "/events"
     else
       flash[:alert] = "入力に誤りがあります。"
-      render "events/#{@event.id}/edit"
+      redirect_to "/events/#{@event.id}/edit"
     end
   end
   
   def destroy
     @event = Event.find(params[:id])
-    if @event.id == current_user.id
-      @event.destroy
+    if @event.destroy
       flash[:notice] = "削除しました！"
       redirect_to "/events"
     else
-      flash[:alert] = "権限がありません。"
+      flash[:alert] = "削除できませんでした。"
       redirect_to "/events"
     end
   end
   
   private
     def event_params
-      params.require(:event).permit(:title, :image, :place, :starttime, :endtime, :release, :user_id).merge(user_id: current_user.id)
+      params.require(:event).permit(:title, :image, :place, :starttime, :day, :endtime, :release, :user_id).merge(user_id: current_user.id)
     end
   
 end

@@ -1,6 +1,121 @@
 /*ここからスマホ用サイズ-----------------------------------------------------------------------------*/
 @media(max-width:767px){
 
+// [sign_upエリア]
+
+.sign-up-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.sign-up-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.sign-up-main{
+    text-align:center;
+}
+
+.field-name, .field-email, .field-password{
+    font-weight:bold;
+    margin-top:40px;
+}
+
+.field-name span, .field-email span, .field-password span{
+    color:#f00;
+    font-weight:normal;
+    font-size:12px;
+}
+
+.sign-up-text{
+    width:60%;
+    border-radius:5px;
+    outline:none;
+}
+
+.actions{
+    padding:0;
+    margin:40px 0;
+}
+
+.sign-up-btn{
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    color:#fff;
+    font-weight:bold;
+    padding:10px 80px;
+    cursor:pointer;
+    outline:none;
+}
+
+.sign-up-btn:hover{
+    background-color:#fff;
+    color:#ff9900;
+}
+
+
+
+
+
+// [sign_inエリア]
+
+.sign-in-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.sign-in-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.sign-in-main{
+    text-align:center;
+}
+
+.field-name, .field-email, .field-password{
+    font-weight:bold;
+    margin-top:40px;
+}
+
+.field-name span, .field-email span, .field-password span{
+    color:#f00;
+    font-weight:normal;
+    font-size:12px;
+}
+
+.sign-in-text{
+    width:60%;
+    border-radius:5px;
+    outline:none;
+}
+
+.actions{
+    padding:0;
+    margin:40px 0;
+}
+
+.sign-in-btn{
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    color:#fff;
+    font-weight:bold;
+    padding:10px 80px;
+    cursor:pointer;
+    outline:none;
+}
+
+.sign-in-btn:hover{
+    background-color:#fff;
+    color:#ff9900;
+}
 
 
 
@@ -14,9 +129,121 @@
 /*ここからタブレット用サイズ-----------------------------------------------------------------------------*/
 @media(min-width:768px) and (max-width:1024px){
 
+// [sign_upエリア]
+
+.sign-up-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.sign-up-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.sign-up-main{
+    text-align:center;
+}
+
+.field-name, .field-email, .field-password{
+    font-weight:bold;
+    margin-top:40px;
+}
+
+.field-name span, .field-email span, .field-password span{
+    color:#f00;
+    font-weight:normal;
+    font-size:12px;
+}
+
+.sign-up-text{
+    width:50%;
+    border-radius:5px;
+    outline:none;
+}
+
+.actions{
+    padding:0;
+    margin:40px 0;
+}
+
+.sign-up-btn{
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    color:#fff;
+    font-weight:bold;
+    padding:10px 80px;
+    cursor:pointer;
+    outline:none;
+}
+
+.sign-up-btn:hover{
+    background-color:#fff;
+    color:#ff9900;
+}
 
 
 
+
+
+// [sign_inエリア]
+
+.sign-in-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.sign-in-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.sign-in-main{
+    text-align:center;
+}
+
+.field-name, .field-email, .field-password{
+    font-weight:bold;
+    margin-top:40px;
+}
+
+.field-name span, .field-email span, .field-password span{
+    color:#f00;
+    font-weight:normal;
+    font-size:12px;
+}
+
+.sign-in-text{
+    width:50%;
+    border-radius:5px;
+    outline:none;
+}
+
+.actions{
+    padding:0;
+    margin:40px 0;
+}
+
+.sign-in-btn{
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    color:#fff;
+    font-weight:bold;
+    padding:10px 80px;
+    cursor:pointer;
+    outline:none;
+}
+
+.sign-in-btn:hover{
+    background-color:#fff;
+    color:#ff9900;
+}
 
 
 }

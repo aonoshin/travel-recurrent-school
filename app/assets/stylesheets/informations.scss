@@ -1,3 +1,309 @@
-// Place all the styles related to the informations controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*ここからスマホ用サイズ-----------------------------------------------------------------------------*/
+@media(max-width:767px){
+
+
+
+
+
+
+
+}
+/*ここまでがスマホ用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからタブレット用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:768px) and (max-width:1024px){
+
+
+
+
+
+}
+/*ここまでがタブレット用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからPC用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:1025px){
+
+// [indexエリア]
+
+.information-index{
+    padding:0;
+    margin:0 0 50px 0;
+}
+
+.information-index-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.information-index-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.information-index-new-btn{
+    margin:50px 0;
+    text-align:center;
+}
+
+.information-index-new-btn a{
+    padding:10px 100px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+}
+
+.information-index-new-btn a:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.information-index-main{
+    text-align:center;
+}
+
+.information-index-empty{
+    text-align:center;
+    margin:50px 0 0 0;
+}
+
+.information-index-empty p{
+    color:#f00;
+    font-weight:bold;
+}
+
+.information-index-content{
+    padding:0;
+    margin:5px;
+    width:30%;
+    border:1px solid #000080;
+    display:inline-block;
+}
+
+.release{
+    padding:5px 0;
+    margin:0;
+    background-color:#ff9900;
+    color:#fff;
+    text-align:center;
+}
+
+.release p{
+    padding:0;
+    margin:0;
+}
+
+.unrelease{
+    padding:5px 0;
+    margin:0;
+    background-color:#6699CC;
+    color:#fff;
+    text-align:center;
+}
+
+.unrelease p{
+    padding:0;
+    margin:0;
+}
+
+.information-index-name{
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+.information-index-image img{
+    width:100%;
+    height:270px;
+}
+
+.information-index-text{
+    padding:5px 8px;
+    margin:0;
+}
+
+.information-index-btn-area ul{
+    padding:5px 0;
+    margin:0;
+    list-style:none;
+    border-top:1px dotted #000080;
+    text-align:center;
+}
+
+.information-index-btn-area li{
+    padding:0;
+    margin:0 40px;
+    display:inline-block;
+}
+
+
+// [newエリア]
+
+.information-new-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.information-new-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.information-new-main{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#000080;
+}
+
+.information-new-main p{
+    padding:0;
+    margin:50px 0 0 0;
+}
+
+.information-new-main span{
+    padding:0;
+    margin:0;
+    color:#f00
+}
+
+.information-new-main ul{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+}
+
+.information-name{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.information-content{
+    width:40%;
+    height:70px;
+    border-radius:5px;
+    outline:none;
+}
+
+.information-new-btn-area{
+    padding:0;
+    margin:0;
+}
+
+.information-new-btn{
+    padding:5px 70px;
+    margin:20px 0;
+    color:#fff;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+}
+
+.information-new-btn:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.information-new-btn-area a:last-of-type:hover{
+    opacity:0.3;
+}
+
+
+
+
+
+// [editエリア]
+
+.information-edit-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.information-edit-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.information-edit-main{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#000080;
+}
+
+.information-edit-main p{
+    padding:0;
+    margin:50px 0 0 0;
+}
+
+.information-edit-main span{
+    padding:0;
+    margin:0;
+    color:#f00
+}
+
+.information-edit-main ul{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+}
+
+.information-name{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.information-content{
+    width:40%;
+    height:70px;
+    border-radius:5px;
+    outline:none;
+}
+
+.information-edit-btn-area{
+    padding:0;
+    margin:0;
+}
+
+.information-edit-btn{
+    padding:5px 70px;
+    margin:20px 0;
+    color:#fff;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+}
+
+.information-edit-btn:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.information-edit-btn-area a:last-of-type:hover{
+    opacity:0.3;
+}
+
+}
+/*ここまでがPC用サイズ-----------------------------------------------------------------------------*/

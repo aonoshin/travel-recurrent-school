@@ -1,0 +1,47 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2>Travel Recurrent School</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", destroy_user_session_path, :method => "delete", data: {confirm:"ログアウトしますか？"} %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="information-new">
+    <div class="information-new-title">
+        <h1>学部の新規立ち上げ</h1>
+    </div>
+    <div class="information-new-main">
+        <%= form_for @information do |i| %>
+          <%= i.hidden_field :user_id, required: true, :value => current_user.id %>
+          <p>－内容－</p>
+          <span>※必須</span><br>
+          <%= i.text_area :content, :class => "information-content" %>
+          <ul class="information-check-box">
+              <li>－掲載の有無－</li>
+              <span>※掲載する場合はチェックを入れてください。</span><br>
+              <li><%= label_tag :release, "掲載する" %></li>
+              <li><%= i.check_box :release, {}, "1", "0" %></li>
+          </ul>
+          <div class="information-new-btn-area">
+              <ul>
+                  <li><%= i.submit "作成する", :class => "information-new-btn", data: {confirm: "作成してもよろしいですか？"} %></li>
+                  <li><%= link_to "一覧へ戻る", "/informations" %></li>
+              </ul>
+          </div>
+        <% end %>
+    </div>
+</div>

@@ -6,24 +6,38 @@
         <li><img src="/assets/top-slide-4.jpg"></li>
         <li><img src="/assets/top-slide-5.jpg"></li>
     </ul>
+    <div class="cleafix">
+        <div class="top-logo-position">
+            <p>LOGO</p>
+        </div>
+        <div class="top-text-position">
+            <p>日常に旅の学びと喜びを</p>
+            <h3><span>T</span>ravel <span>R</span>ecurrent <span>S</span>chool</h3>
+        </div>
+    </div>
+    <div class="top-enroll-position">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSenh_f-DswHYGtjgCbFok0XpdKFcLUdl7PB0EC7qfSf9BRwoA/viewform">Enroll in School</a>
+    </div>
 </div>
-<div id="top-image-btn">
-    <ul>
-        <li><a href="#" class="target">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-    </ul>
-</div>
+<!--<div id="top-image-btn">-->
+<!--    <ul>-->
+<!--        <li><a href="#" class="target">1</a></li>-->
+<!--        <li><a href="#">2</a></li>-->
+<!--        <li><a href="#">3</a></li>-->
+<!--        <li><a href="#">4</a></li>-->
+<!--        <li><a href="#">5</a></li>-->
+<!--    </ul>-->
+<!--</div>-->
+
+<div id="dummy-top"></div>
 
 <div class="navbar-top">
     <div class="navbar-logo">
         <p>Logo</p>
     </div>
     <div class="navbar-title">
-        <p>－日常に旅の学びと喜びを－</p>
-        <h2>Travel Recurrent School</h2>
+        <p>日常に旅の学びと喜びを</p>
+        <h2><span>T</span>ravel <span>R</span>ecurrent <span>S</span>chool</h2>
     </div>
     <div class="toggle-btn">
         <i class="fas fa-bars"></i>
@@ -32,18 +46,24 @@
         <ul>
             <li><%= link_to "TOP", "/" %></li>
             <li>／</li>
-            <li><%= link_to "ABOUT", "/" %></li>
+            <li><%= link_to "ABOUT", "#about-scroll" %></li>
             <li>／</li>
-            <li><%= link_to "EVENT", "/" %></li>
+            <li><%= link_to "EVENT", "#event-scroll" %></li>
             <li>／</li>
-            <li><%= link_to "NEWS", "/" %></li>
+            <li><%= link_to "NEWS", "#news-scroll" %></li>
             <li>／</li>
-            <li><%= link_to "JOIN", "/" %></li>
+            <li><%= link_to "FEE", "#fee-scroll" %></li>
             <li>／</li>
-            <li><%= link_to "CONTACT", "/" %></li>
+            <li><%= link_to "PROFILE", "#profile-scroll" %></li>
+            <li>／</li>
+            <li><%= link_to "ENROLL", "#enroll-scroll" %></li>
+            <li>／</li>
+            <li><%= link_to "CONTACT", "#enroll-scroll" %></li>
             <% if user_signed_in? %>
               <li>／</li>
-              <li><%= link_to "LOG AUTO", "/" %></li>
+              <li><%= link_to "LOG AUTO", destroy_user_session_path, :method => "delete", data: {confirm:"ログアウトしますか？"} %></li>
+              <li>／</li>
+              <li><%= link_to "ADMIN", "/admins" %></li>
             <% end %>
         </ul>
     </div>
@@ -52,21 +72,25 @@
 <div class="salon-introduction">
     <div class="salon-introduction-title">
         <p>トラベル　リカレント　スクール</p>
-        <h1>Travel Recurrent School</h1>
+        <h1><span>T</span>ravel <span>R</span>ecurrent <span>S</span>chool</h1>
         <p>へようこそ！</p>
     </div>
     <div class="salon-introduction-text">
         <h3>当スクールは<br>
         旅が好きすぎてたまらない旅行業界在籍経験の学長が<br>
-        ”旅好きが集まり旅に関する学びや経験や<br>
-        仲間が得られる環境を築こう”<br>
-        という意思のもと開校された<br>
+        "旅に出なくても旅好き同士が繋がれて<br>
+        旅の楽しい経験や情報の共有を<br>
+        いつでも気軽に行える環境を築こう”<br>
+        という考えのもと開校された<br>
         "年齢" "性別" "国籍" "職業" 関係無く<br>
         ボーダレスでいつでも自由に入学できる<br>
         <span>旅好きな人のための旅に特化した旅の専門学校です！</span></h3>
     </div>
 </div>
 
+<!--[スムーススクロール用]---------------->
+<div id="about-scroll"></div>
+<!---------------------------------------->
 <div class="salon-about">
     <h1>ABOUT</h1>
 </div>
@@ -104,6 +128,7 @@
     </div>
 </div>
 
+
 <div class="salon-about-3">
     <h2>好きなジャンルだけを学べる ”学部制度” ♪</h2>
     <div class="cleafix">
@@ -113,12 +138,186 @@
             入学したら好みの学部に自由に入ってください♪</p>
         </div>
         <div class="salon-about-3-faculty">
-            <!--< @faculties.each do |f| %>-->
-            <!--< end %>-->
+            <% @faculties.each do |f| %>
+              <% if f.release == "1" %>
+                <div class="top-faculty">
+                    <div class="top-faculty-name">
+                        <%= f.name %>
+                    </div>
+                    <div class="top-faculty-image">
+                        <%= image_tag f.image %>
+                    </div>
+                    <div class="top-faculty-content">
+                        <%= f.content %>
+                    </div>
+                </div>
+              <% end %>
+            <% end %>
         </div>
     </div>
 </div>
 
+
+<!--[スムーススクロール用]---------------->
+<div id="event-scroll"></div>
+<!---------------------------------------->
 <div class="salon-about-4">
-    <h2>入学メリット♪</h2>
+    <h1>EVENT</h1>
+    <div class="cleafix">
+        <div class="salon-about-4-event">
+            <% @events.each do |e| %>
+              <% if e.release == "1" %>
+                <div class="top-event">
+                    <div class="top-event-name">
+                        <%= e.title %>
+                    </div>
+                    <div class="top-event-day">
+                        <%= e.day.strftime("%Y/%m/%d") %>
+                    </div>
+                    <div class="top-event-time">
+                        <ul>
+                            <li><%= e.starttime.strftime("%H:%M") %></li>
+                            <li>～<%= e.endtime.strftime("%H:%M") %></li>
+                        </ul>
+                    </div>
+                    <div class="top-event-image">
+                        <%= image_tag e.image %>
+                    </div>
+                    <div class="top-event-place">
+                        ＠ <%= e.place %>
+                    </div>
+                </div>
+              <% end %>
+            <% end %>
+        </div>
+    </div>
+    <div class="salon-about-4-text">
+        <p>入学前に一度勉強会やオフ会に体験参加することができます。<br>
+        ご希望の方は下記よりその旨をお申しつけください。</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSelRX5x2HXNkhWTUfYQCVVHSlgeu2CNszcsJyGl9qZu5iCffQ/viewform">入学体験の相談をする　＞</a>
+    </div>
+</div>
+
+
+<!--[スムーススクロール用]---------------->
+<div id="news-scroll"></div>
+<!---------------------------------------->
+<div class="salon-about-5">
+    <h1>NEWS</h1>
+    <div class="cleafix">
+        <div class="salon-about-5-news">
+            <% @news.each do |n| %>
+              <% if n.release == "1" %>
+                <div class="top-news">
+                    <div class="top-news-day">
+                        <%= n.created_at.strftime("%Y/%m/%d") %>
+                    </div>
+                    <div class="top-news-content">
+                        <%= n.content %>
+                    </div>
+                </div>
+              <% end %>
+            <% end %>
+        </div>
+    </div>
+</div>
+
+
+<!--[スムーススクロール用]---------------->
+<div id="fee-scroll"></div>
+<!---------------------------------------->
+<div class="salon-about-6">
+    <h1>FEE</h1>
+    <div class="salon-about-6-fee">
+        <% @fees.each do |f| %>
+          <% if f.release == "1" %>
+            <div class="top-fee">
+                <div class="top-fee-name-price">
+                    <ul>
+                        <li><%= f.name %></li>
+                        <li><span>月額 </span><%= f.price.to_s(:delimited) %><span> 円</span></li>
+                    </ul>
+                </div>
+                <div class="top-fee-text">
+                    <p><%= f.text %></p>
+                </div>
+            </div>
+          <% end %>
+        <% end %>
+    </div>
+    <div class="salon-about-6-enroll">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSenh_f-DswHYGtjgCbFok0XpdKFcLUdl7PB0EC7qfSf9BRwoA/viewform">Enroll in School</a>
+    </div>
+</div>
+
+
+<!--[スムーススクロール用]---------------->
+<div id="profile-scroll"></div>
+<!---------------------------------------->
+<div class="salon-about-7">
+    <h1>PRESIDENT PROFILE</h1>
+    <p class="salon-about-7-p"></p>
+    <% @profiles.each do |p| %>
+      <div class="top-profile">
+          <div class="top-profile-image">
+              <% if p.image.present? %>
+                <%= image_tag p.image %>
+              <% else %>
+                <%= image_tag "default-icon.jpg" %>
+              <% end %>
+          </div>
+          <div class="top-profile-detail">
+              <ul>
+                  <li><span>Name</span>：<%= p.name %></li>
+                  <li><span>Birthday</span>：<%= p.birthday.strftime("%Y/%m/%d") %> （<%= p.age %>歳）</li>
+                  <li><span>From</span>：<%= p.place %></li>
+                  <li><span> Base</span>：<%= p.area %></li>
+                  <li><span>Work</span>：<%= p.work %></li>
+                  <li><span>Hobby</span>：<%= p.hobby %></li>
+              </ul>
+          </div>
+          <div class="top-profile-country">
+              <ul>
+                  <li><span>－Countries Visited－</span></li>
+                  <li><%= p.country %></li>
+              </ul>
+          </div>
+          <div class="top-profile-career">
+              <ul>
+                  <li><span>－Career－</span></li>
+                  <li><%= simple_format(p.career) %></li>
+              </ul>
+          </div>
+      </div>
+    <% end %>
+</div>
+
+
+<!--[スムーススクロール用]---------------->
+<div id="enroll-scroll"></div>
+<!---------------------------------------->
+<div class="salon-about-8">
+    <h2>REQUEST & CONTACT</h2>
+    <p class="salon-about-8-p"></p>
+    <div class="salon-about-8-sub">
+        <div class="enroll-area">
+            <p>当スクールに入学をご希望される方はこちらから入学手続きを行ってください♪</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSenh_f-DswHYGtjgCbFok0XpdKFcLUdl7PB0EC7qfSf9BRwoA/viewform">Enroll in School</a>
+        </div>
+        <div class="contact-area">
+            <p>当スクールに関するご質問・ご要望等はこちらからお問い合わせください♪</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSelRX5x2HXNkhWTUfYQCVVHSlgeu2CNszcsJyGl9qZu5iCffQ/viewform">Contact</a>
+        </div>
+        <div class="wanted-area">
+            <p>先生を募集しています！気になった方はこちらからお申しつけください♪</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-EjTc7n3CE3fiSLjJGINHVOD_F7o4XFSJKol-tYDgaLN9Hg/viewform">Teacher Wanted</a>
+        </div>
+    </div>
+    <div class="salon-about-8-text">
+        <ul>
+            <li>先生として募集しているのが「写真撮影」「海外在中経験者」「SNSインフルエンサー」「英会話」などです。この他にスクール内で役立ちそうな得意分野がありましたら気軽にお申しつけください。</li>
+            <li>先生の応募に関するスキルや経験値のノルマは特に設けていませんが、メールにて詳しく経歴等をお伺いする場合がございますので予めご了承ください。</li>
+            <li>スクールからの返信・回答は「～2日以内」にメールにてお送りします。※多少の時間の前後あり。</li>
+        </ul>
+    </div>
 </div>

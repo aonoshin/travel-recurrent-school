@@ -1,0 +1,72 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2><span>T</span>ravel <span>R</span>ecurrent <span>S</span>chool</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", destroy_user_session_path, :method => "delete", data: {confirm:"ログアウトしますか？"} %></li>
+              <li>／</li>
+              <li><%= link_to "ADMIN", "/admins" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="news-index">
+    <div class="news-index-title">
+        <h1>お知らせ一覧（編集用）</h1>
+    </div>
+    <div class="news-index-new-btn">
+        <%= link_to "新規作成", "/news/new" %>
+    </div>
+    <div class="news-index-back-btn">
+        <%= link_to "管理者編集一覧に戻る", "/admins" %>
+    </div>
+    <div class="news-index-main">
+        <% if @news.present? %>
+          <% @news.each do |n| %>
+            <div class="news-index-content">
+                <div class="cleafix">
+                    <% if n.release == "1" %>
+                      <div class="release">
+                          <p>掲載中</p>
+                      </div>
+                    <% else %>
+                      <div class="unrelease">
+                          <p>非掲載</p>
+                      </div>
+                    <% end %>
+                    <div class="news-index-time">
+                        更新日：<%= n.updated_at.strftime("%Y/%m/%d") %>
+                    </div>
+                    <div class="news-index-text">
+                        <%= n.content %>
+                    </div>
+                </div>
+                <div class="cleafix">
+                    <div class="news-index-btn-area">
+                        <ul>
+                            <li><%= link_to "編集", "/news/#{n.id}/edit" %></li>
+                            <li><%= link_to "削除", "/news/#{n.id}", :method => "delete", data: {confirm: "削除してもよろしいですか？"} %></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          <% end %>
+        <% else %>
+          <div class="news-index-empty">
+              <p>まだひとつも作成されていません。</p>
+          </div>
+        <% end %>
+    </div>
+</div>

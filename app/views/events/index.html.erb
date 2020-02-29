@@ -4,7 +4,7 @@
     </div>
     <div class="navbar-title">
         <p>－日常に旅の学びと喜びを－</p>
-        <h2>Travel Recurrent School</h2>
+        <h2><span>T</span>ravel <span>R</span>ecurrent <span>S</span>chool</h2>
     </div>
     <div class="toggle-btn">
         <i class="fas fa-bars"></i>
@@ -14,7 +14,9 @@
             <li><%= link_to "TOP", "/" %></li>
             <% if user_signed_in? %>
               <li>／</li>
-              <li><%= link_to "LOG AUTO", "/" %></li>
+              <li><%= link_to "LOG AUTO", destroy_user_session_path, :method => "delete", data: {confirm:"ログアウトしますか？"} %></li>
+              <li>／</li>
+              <li><%= link_to "ADMIN", "/admins" %></li>
             <% end %>
         </ul>
     </div>
@@ -27,34 +29,60 @@
     <div class="event-index-new-btn">
         <%= link_to "新規作成", "/events/new" %>
     </div>
+    <div class="event-index-back-btn">
+        <%= link_to "管理者編集一覧に戻る", "/admins" %>
+    </div>
     <div class="event-index-main">
-        <!--< if @event.present? %>-->
+        <% if @events.present? %>
           <% @events.each do |e| %>
             <div class="event-index-content">
-                <div class="event-index-release">
-                    <%= e.release %>
+                <% if e.release == "1" %>
+                  <div class="release">
+                      <p>掲載中</p>
+                  </div>
+                <% else %>
+                  <div class="unrelease">
+                      <p>非掲載</p>
+                  </div>
+                <% end %>
+                <div class="cleafix">
+                    <div class="event-index-name">
+                        <%= e.title %>
+                    </div>
+                    <div class="event-index-image">
+                        <%= image_tag e.image %>
+                    </div>
+                    <div class="event-index-detail">
+                        <div class="cleafix">
+                          <div class="event-index-day">
+                              DATE：<%= e.day.strftime("%Y/%m/%d") %>
+                          </div>
+                          <div class="event-index-time">
+                              <ul>
+                                  <li>TIME：<%= e.starttime.strftime("%H:%M") %></li>
+                                  <li>～<%= e.endtime.strftime("%H:%M") %></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="cleafix">
+                            <div class="event-index-place">
+                                PLACE：<%= e.place %>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="event-index-title">
-                    <%= e.title %>
-                </div>
-                <div class="event-index-image">
-                    <%= image_tag e.image %>
-                </div>
-                <div class="event-index-place">
-                    <%= e.place %>
-                </div>
-                <div class="event-index-time">
+                <div class="event-index-btn-area">
                     <ul>
-                        <li><%= e.starttime %></li>
-                        <li><%= e.endtime %></li>
+                        <li><%= link_to "編集", "/events/#{e.id}/edit" %></li>
+                        <li><%= link_to "削除", "/events/#{e.id}", :method => "delete", data: {confirm: "削除してもよろしいですか？"} %></li>
                     </ul>
                 </div>
             </div>
           <% end %>
-        <!--< else %>-->
-        <!--  <div class="event-index-empty">-->
-        <!--      <p>まだひとつも作成されていません。</p>-->
-        <!--  </div>-->
-        <!--< end %>-->
+        <% else %>
+          <div class="event-index-empty">
+              <p>まだひとつも作成されていません。</p>
+          </div>
+        <% end %>
     </div>
 </div>

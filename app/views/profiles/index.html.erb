@@ -1,0 +1,78 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2><span>T</span>ravel <span>R</span>ecurrent <span>S</span>chool</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", destroy_user_session_path, :method => "delete", data: {confirm:"ログアウトしますか？"} %></li>
+              <li>／</li>
+              <li><%= link_to "ADMIN", "/admins" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="profile-index">
+    <div class="profile-index-title">
+        <h1>学長プロフィール（編集用）</h1>
+    </div>
+    <div class="profile-index-new-btn">
+        <%= link_to "新規作成", "/profiles/new" %>
+    </div>
+    <div class="profile-index-back-btn">
+        <%= link_to "管理者編集一覧に戻る", "/admins" %>
+    </div>
+    <div class="profile-index-main">
+        <% if @profiles.present? %>
+          <% @profiles.each do |p| %>
+            <div class="profile-index-detail">
+                <div class="profile-index-image">
+                    <% if p.image.present? %>
+                      <%= image_tag p.image %>
+                    <% else %>
+                      <%= image_tag "default-icon.jpg" %>
+                    <% end %>
+                </div>
+                <div class="profile-index-text">
+                    <ul>
+                        <li><span>Name</span>：<%= p.name %></li>
+                        <li><span>Birthday</span>：<%= p.birthday %>（<%= p.age %>歳）</li>
+                        <li><span>From</span>：<%= p.place %></li>
+                        <li><span>Work</span>：<%= p.work %></li>
+                        <li><span>Activity Base</span>：<%= p.area %></li>
+                        <li><span>Hobby</span>：<%= p.hobby %></li>
+                    </ul>
+                </div>
+                <div class="profile-index-country">
+                    <p><span>－Countries Visited－</span></p>
+                    <%= p.country %>
+                </div>
+                <div class="profile-index-career">
+                    <p><span>－Career－</span></p>
+                    <%= simple_format(p.career) %>
+                </div>
+            </div>
+            <div class="profile-index-btn-area">
+                <ul>
+                    <li><%= link_to "編集", "/profiles/#{p.id}/edit" %></li>
+                    <li><%= link_to "削除", "/profiles/#{p.id}", :method => "delete", data: {confirm: "本当に削除してもよろしいですか？"} %></li>
+                </ul>
+            </div>
+          <% end %>
+        <% else %>
+          <div class="profile-index-empty">
+              <p>プロフィールが作成されていません。</p>
+          </div>
+        <% end %>
+    </div>
+</div>

@@ -4,7 +4,7 @@
     </div>
     <div class="navbar-title">
         <p>－日常に旅の学びと喜びを－</p>
-        <h2>Travel Recurrent School</h2>
+        <h2><span>T</span>ravel <span>R</span>ecurrent <span>S</span>chool</h2>
     </div>
     <div class="toggle-btn">
         <i class="fas fa-bars"></i>
@@ -14,7 +14,9 @@
             <li><%= link_to "TOP", "/" %></li>
             <% if user_signed_in? %>
               <li>／</li>
-              <li><%= link_to "LOG AUTO", "/" %></li>
+              <li><%= link_to "LOG AUTO", destroy_user_session_path, :method => "delete", data: {confirm:"ログアウトしますか？"} %></li>
+              <li>／</li>
+              <li><%= link_to "ADMIN", "/admins" %></li>
             <% end %>
         </ul>
     </div>
@@ -27,13 +29,22 @@
     <div class="faculty-index-new-btn">
         <%= link_to "新規作成", "/faculties/new" %>
     </div>
+    <div class="faculty-index-back-btn">
+        <%= link_to "管理者編集一覧に戻る", "/admins" %>
+    </div>
     <div class="faculty-index-main">
-        <!--< if @faculty.present? %>-->
+        <% if @faculties.present? %>
           <% @faculties.each do |f| %>
             <div class="faculty-index-content">
-                <div class="faculty-index-release">
-                    <%= f.release %>
-                </div>
+                <% if f.release == "1" %>
+                  <div class="release">
+                      <p>掲載中</p>
+                  </div>
+                <% else %>
+                  <div class="unrelease">
+                      <p>非掲載</p>
+                  </div>
+                <% end %>
                 <div class="faculty-index-name">
                     <%= f.name %>
                 </div>
@@ -41,14 +52,20 @@
                     <%= image_tag f.image %>
                 </div>
                 <div class="faculty-index-text">
-                    <%= f.content %>
+                    <%= simple_format(f.content) %>
+                </div>
+                <div class="faculty-index-btn-area">
+                    <ul>
+                        <li><%= link_to "編集", "/faculties/#{f.id}/edit" %></li>
+                        <li><%= link_to "削除", "/faculties/#{f.id}", :method => "delete", data: {confirm: "削除してもよろしいですか？"} %></li>
+                    </ul>
                 </div>
             </div>
           <% end %>
-        <!--< else %>-->
-        <!--  <div class="faculty-index-empty">-->
-        <!--      <p>まだひとつも作成されていません。</p>-->
-        <!--  </div>-->
-        <!--< end %>-->
+        <% else %>
+          <div class="faculty-index-empty">
+              <p>まだひとつも作成されていません。</p>
+          </div>
+        <% end %>
     </div>
 </div>

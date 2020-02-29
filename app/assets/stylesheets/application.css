@@ -71,10 +71,168 @@ body{
 /*ここからスマホ用サイズ-----------------------------------------------------------------------------*/
 @media(max-width:767px){
 
+/*[navbarエリア]*/
+
+.navbar-top{
+    padding:0;
+    margin:0;
+    border-bottom:1px solid #000080;
+    background-color:#fff;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+.navbar{
+    padding:0;
+    margin:0;
+    background-color:#fff;
+    top:0;
+    position:sticky;
+}
+
+.navbar-logo{
+    padding:20px;
+    margin:0;
+    background-color:#ff0;
+    float:left;
+}
+
+.navbar-logo p{
+    padding:0;
+    margin:0;
+}
+
+.navbar-title{
+    padding:0;
+    margin:10px 0 0 10px;
+    float:left;
+    text-align:center;
+}
+
+.navbar-title p{
+    padding:0;
+    margin:0;
+    font-size:15px;
+    color:#ffff33;
+    text-shadow:1px 1px 0 #000080;
+}
+
+.navbar-title h2{
+    padding:0;
+    margin:0;
+    font-size:20px;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000080;
+}
+
+.navbar-title h2 span{
+    color:#ffff33;
+}
+
+.navbar-list ul{
+    padding:0;
+    margin:0;
+    width:100%;
+    list-style:none;
+    float:right;
+    display:none;
+    background-color:#6699cc;
+    text-align:center;
+}
+
+.navbar-list li{
+    padding:5px 0;
+    margin:0;
+    border-bottom:1px solid #000080;
+}
+
+.navbar-list li:nth-of-type(even){
+    display:none;
+}
+
+.navbar-list li:hover{
+    background-color:#eee;
+}
+
+.navbar-list a{
+    padding:5px 0;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    font-size:13px;
+    display:block;
+}
+
+.navbar-list a:hover{
+    color:#6699cc;
+}
+
+.toggle-btn{
+    padding:0;
+    margin:20px 20px 0 0;
+    float:right;
+}
+
+.toggle-btn i{
+    font-size:30px;
+    cursor:pointer;
+    color:#6699cc;
+}
+
+.toggle-btn i:hover{
+    color:#000080;
+}
 
 
+/*[footerエリア]*/
 
+.footer{
+    padding:0;
+    margin:0;
+    background-color:#ccc;
+    margin-top:auto;
+    text-align:center;
+}
 
+.footer-text{
+    height:100px;
+    margin:30px 0 10px;
+    color:#fff;
+}
+
+.footer-text h2{
+    padding:0;
+    margin:0;
+    font-size:20px;
+}
+
+.footer-text p{
+    padding:0;
+    margin:0;
+}
+
+.footer-list ul{
+    padding:0;
+    margin:0 0 40px 0;
+    list-style:none;
+    font-weight:bold;
+}
+
+.footer-list li{
+    display:inline-block;
+    margin:0 40px;
+}
+
+.footer-list a{
+    color:#fff;
+    text-shadow:1px 1px 0 #000;
+}
+
+.footer-list a:hover{
+    color:#000;
+}
 
 
 }
@@ -87,8 +245,173 @@ body{
 /*ここからタブレット用サイズ-----------------------------------------------------------------------------*/
 @media(min-width:768px) and (max-width:1024px){
 
+/*[navbarエリア]*/
+
+.navbar-top{
+    padding:0;
+    margin:0;
+    border-bottom:2px double #000;
+    background-color:#fff;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+.navbar{
+    padding:0;
+    margin:0;
+    border-bottom:2px double #000;
+    background-color:#fff;
+    top:0;
+    position:sticky;
+}
+
+.navbar-logo{
+    padding:20px;
+    margin:0;
+    background-color:#ff0;
+    float:left;
+}
+
+.navbar-logo p{
+    padding:0;
+    margin:0;
+}
+
+.navbar-title{
+    padding:0;
+    margin:10px 0 0 10px;
+    float:left;
+    text-align:center;
+}
+
+.navbar-title p{
+    padding:0;
+    margin:0;
+    font-size:15px;
+    color:#ffff33;
+    text-shadow:1px 1px 0 #000080;
+}
+
+.navbar-title h2{
+    padding:0;
+    margin:0;
+    font-size:20px;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000080;
+}
+
+.navbar-title h2 span{
+    color:#ffff33;
+}
+
+.navbar-list ul{
+    padding:0;
+    margin:0;
+    width:100%;
+    list-style:none;
+    float:right;
+    display:none;
+    background-color:#6699cc;
+    text-align:center;
+}
+
+.navbar-list li{
+    padding:5px 0;
+    margin:0;
+    border-bottom:1px solid #000080;
+}
+
+.navbar-list li:nth-of-type(even){
+    display:none;
+}
+
+.navbar-list li:hover{
+    background-color:#eee;
+}
+
+.navbar-list a{
+    padding:5px 0;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    font-size:13px;
+    display:block;
+}
+
+.navbar-list a:hover{
+    color:#6699cc;
+}
+
+.toggle-btn{
+    padding:0;
+    margin:20px 30px 0 0;
+    float:right;
+}
+
+.toggle-btn i{
+    font-size:30px;
+    cursor:pointer;
+    color:#6699cc;
+}
+
+.toggle-btn i:hover{
+    color:#000080;
+}
 
 
+/*[footerエリア]*/
+
+.footer{
+    padding:0;
+    margin:0;
+    background-color:#ccc;
+    margin-top:auto;
+    text-align:center;
+}
+
+.footer-text{
+    height:100px;
+    text-align:center;
+    margin:30px 0 0 0;
+    color:#fff;
+}
+
+.footer-text h2{
+    padding:0;
+    margin:0;
+}
+
+.footer-text p{
+    padding:0;
+    margin:0;
+}
+
+.footer-list{
+    text-align:center;
+}
+
+.footer-list ul{
+    padding:0;
+    margin:0 0 50px 0;
+    list-style:none;
+    font-weight:bold;
+}
+
+.footer-list li{
+    display:inline-block;
+    margin:0 40px;
+}
+
+.footer-list a{
+    color:#fff;
+    text-shadow:1px 1px 0 #000;
+}
+
+.footer-list a:hover{
+    color:#000;
+}
 
 
 }
@@ -112,6 +435,7 @@ body{
     width:100%;
     top:0;
     left:0;
+    z-index:1;
 }
 
 .navbar{
@@ -124,7 +448,7 @@ body{
 }
 
 .navbar-logo{
-    padding:40px;
+    padding:20px;
     margin:0;
     background-color:#ff0;
     float:left;
@@ -137,7 +461,7 @@ body{
 
 .navbar-title{
     padding:0;
-    margin:20px 0 0 10px;
+    margin:10px 0 0 10px;
     float:left;
     text-align:center;
 }
@@ -145,38 +469,49 @@ body{
 .navbar-title p{
     padding:0;
     margin:0;
+    font-size:15px;
+    color:#ffff33;
+    text-shadow:1px 1px 0 #000080;
 }
 
 .navbar-title h2{
     padding:0;
     margin:0;
+    font-size:20px;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000080;
+}
+
+.navbar-title h2 span{
+    color:#ffff33;
 }
 
 .navbar-list ul{
     padding:0;
-    margin:50px 0 0;
+    margin:25px 0 0;
     list-style:none;
     float:right;
 }
 
 .navbar-list li{
     padding:0;
-    margin:0 10px;
+    margin:0 5px;
     display:inline-block;
 }
 
 .navbar-list li:last-of-type{
-    margin-right:30px;
+    margin-right:20px;
 }
 
 .navbar-list a{
     text-decoration:none;
     color:#bbb;
     font-weight:bold;
+    font-size:13px;
 }
 
 .navbar-list a:hover{
-    color:#000;
+    color:#6699cc;
     text-decoration:underline;
 }
 
@@ -205,28 +540,12 @@ body{
     margin:0;
     background-color:#ccc;
     margin-top:auto;
-}
-
-.footer-logo{
-    float:left;
-    width:45%;
-    height:200px;
-}
-
-.footer-logo p{
-    padding:0;
-    margin:0 auto;
-    width:50%;
-    height:200px;
-    background-color:#ff0;
+    text-align:center;
 }
 
 .footer-text{
-    float:left;
-    width:30%;
     height:100px;
-    text-align:center;
-    margin:50px 50px 0 0;
+    margin:50px 0 20px;
     color:#fff;
 }
 
@@ -238,10 +557,6 @@ body{
 .footer-text p{
     padding:0;
     margin:0;
-}
-
-.footer-list{
-    text-align:center;
 }
 
 .footer-list ul{

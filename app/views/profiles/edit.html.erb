@@ -1,0 +1,70 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2><span>T</span>ravel <span>R</span>ecurrent <span>S</span>chool</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", destroy_user_session_path, :method => "delete", data: {confirm:"ログアウトしますか？"} %></li>
+              <li>／</li>
+              <li><%= link_to "ADMIN", "/admins" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="profile-edit">
+    <div class="profile-edit-title">
+        <h1>学部の新規立ち上げ</h1>
+    </div>
+    <div class="profile-edit-main">
+        <%= form_for @profile do |p| %>
+          <%= p.hidden_field :user_id, required: true, :value => current_user.id %>
+          <p>－プロフィール写真－</p>
+          <span>※必須</span><br>
+          <%= p.file_field :image, :class => "profile-image" %>
+          <p>－名前－</p>
+          <span>※必須</span><br>
+          <%= p.text_field :name, :class => "profile-name" %>
+          <p>－生年月日－</p>
+          <span>※必須</span><br>
+          <%= p.date_field :birthday, :class => "profile-birthday" %>
+          <p>－年齢－</p>
+          <span>※必須</span><br>
+          <%= p.number_field :age, :class => "profile-age" %>
+          <p>－出身都道府県－</p>
+          <span>※必須</span><br>
+          <%= p.text_field :place, :class => "profile-place" %>
+          <p>－主な活動拠点－</p>
+          <span>※必須</span><br>
+          <%= p.text_field :area, :class => "profile-area" %>
+          <p>－職業－</p>
+          <span>※必須</span><br>
+          <%= p.text_field :work, :class => "profile-work" %>
+          <p>－趣味－</p>
+          <span>※必須</span><br>
+          <%= p.text_field :hobby, :class => "profile-hobby" %>
+          <p>－キャリア－</p>
+          <span>※必須</span><br>
+          <%= p.text_area :career, :class => "profile-career" %>
+          <p>－これまでに訪れた国・地域－</p>
+          <span>※必須</span><br>
+          <%= p.text_area :country, :class => "profile-country" %>
+          <div class="profile-edit-btn-area">
+              <ul>
+                  <li><%= p.submit "変更する", :class => "profile-edit-btn", data: {confirm: "作成してもよろしいですか？"} %></li>
+                  <li><%= link_to "戻る", "/profiles" %></li>
+              </ul>
+          </div>
+        <% end %>
+    </div>
+</div>

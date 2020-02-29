@@ -1,0 +1,1108 @@
+/*ここからスマホ用サイズ-----------------------------------------------------------------------------*/
+@media(max-width:767px){
+
+// [indexエリア]
+
+.profile-index{
+    padding:0;
+    margin:0 0 50px 0;
+}
+
+.profile-index-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.profile-index-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.profile-index-new-btn{
+    margin:50px 0 20px;
+    text-align:center;
+}
+
+.profile-index-new-btn a{
+    padding:10px 100px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+}
+
+.profile-index-new-btn a:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.profile-index-back-btn{
+    padding:0;
+    margin:0 0 50px 0;
+    text-align:center;
+}
+
+.profile-index-main{
+    padding:0;
+    margin:0;
+}
+
+.profile-index-empty{
+    text-align:center;
+    margin:50px 0 0 0;
+}
+
+.profile-index-empty p{
+    color:#f00;
+    font-weight:bold;
+}
+
+.profile-index-detail{
+    padding:0;
+    margin:0 auto;
+    width:95%;
+    border:1px solid #000080;
+}
+
+.profile-index-detail span{
+    padding:0;
+    margin:0;
+    background-color:#ffff33;
+    font-weight:bold;
+}
+
+.profile-index-image{
+    padding:0;
+    margin:0;
+    width:49%;
+    display:inline-block;
+}
+
+.profile-index-image img{
+    width:100%;
+    display:inline-block;
+}
+
+.profile-index-text{
+    padding:0;
+    margin:0;
+    width:49%;
+    display:inline-block;
+    font-size:10.5px;
+}
+
+.profile-index-text ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.profile-index-text ul li{
+    padding:0;
+    margin:0 auto 5px 0;
+    width:95%;
+    border-bottom:1px solid #000080;
+}
+
+.profile-index-country, .profile-index-career, .profile-index-content{
+    padding:0;
+    margin: 15px auto;
+    width:95%;
+    text-align:center;
+    border-bottom:1px dotted #000080;
+    font-size:14px;
+}
+
+.profile-index-country p, .profile-index-career p, .profile-index-content p{
+    padding:0;
+    margin:0;
+}
+
+.profile-index-btn-area ul{
+    padding:5px 0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+
+.profile-index-btn-area li{
+    padding:0;
+    margin:0 40px;
+    display:inline-block;
+}
+
+
+
+// [newエリア]
+
+.profile-new-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.profile-new-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.profile-new-main{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#000080;
+}
+
+.profile-new-main p{
+    padding:0;
+    margin:50px 0 0 0;
+}
+
+.profile-new-main span{
+    padding:0;
+    margin:0;
+    color:#f00
+}
+
+.profile-new-main ul{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+}
+
+.profile-name{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-birthday{
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-age{
+    width:5%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-place{
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-area{
+    width:60%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-work{
+    width:60%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-hobby{
+    width:60%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-career, .profile-country, .profile-content{
+    width:70%;
+    height:100px;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-new-btn-area{
+    padding:0;
+    margin:0;
+}
+
+.profile-new-btn{
+    padding:5px 70px;
+    margin:20px 0;
+    color:#fff;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+}
+
+.profile-new-btn:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.profile-new-btn-area a:last-of-type:hover{
+    opacity:0.3;
+}
+
+
+
+
+// [editエリア]
+
+.profile-edit-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.profile-edit-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.profile-edit-main{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#000080;
+}
+
+.profile-edit-main p{
+    padding:0;
+    margin:50px 0 0 0;
+}
+
+.profile-edit-main span{
+    padding:0;
+    margin:0;
+    color:#f00
+}
+
+.profile-edit-main ul{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+}
+
+.profile-name{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-birthday{
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-age{
+    width:5%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-place{
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-area{
+    width:60%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-work{
+    width:60%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-hobby{
+    width:60%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-career, .profile-country, .profile-content{
+    width:70%;
+    height:100px;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-edit-btn-area{
+    padding:0;
+    margin:0;
+}
+
+.profile-edit-btn{
+    padding:5px 70px;
+    margin:20px 0;
+    color:#fff;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+}
+
+.profile-edit-btn:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.profile-edit-btn-area a:last-of-type:hover{
+    opacity:0.3;
+}
+
+
+
+
+
+
+}
+/*ここまでがスマホ用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからタブレット用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:768px) and (max-width:1024px){
+
+// [indexエリア]
+
+.profile-index{
+    padding:0;
+    margin:0 0 50px 0;
+}
+
+.profile-index-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.profile-index-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.profile-index-new-btn{
+    margin:50px 0 20px;
+    text-align:center;
+}
+
+.profile-index-new-btn a{
+    padding:10px 100px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+}
+
+.profile-index-new-btn a:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.profile-index-back-btn{
+    padding:0;
+    margin:0 0 50px 0;
+    text-align:center;
+}
+
+.profile-index-main{
+    padding:0;
+    margin:0;
+}
+
+.profile-index-empty{
+    text-align:center;
+    margin:50px 0 0 0;
+}
+
+.profile-index-empty p{
+    color:#f00;
+    font-weight:bold;
+}
+
+.profile-index-detail{
+    padding:0;
+    margin:0 auto;
+    width:90%;
+    border:1px solid #000080;
+}
+
+.profile-index-detail span{
+    padding:0;
+    margin:0;
+    background-color:#ffff33;
+    font-weight:bold;
+}
+
+.profile-index-image{
+    padding:0;
+    margin:0;
+    width:49%;
+    display:inline-block;
+}
+
+.profile-index-image img{
+    width:100%;
+    display:inline-block;
+}
+
+.profile-index-text{
+    padding:0;
+    margin:0;
+    width:49%;
+    display:inline-block;
+}
+
+.profile-index-text ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.profile-index-text ul li{
+    padding:0;
+    margin:0 auto 10px auto;
+    width:95%;
+    border-bottom:1px solid #000080;
+}
+
+.profile-index-country, .profile-index-career, .profile-index-content{
+    padding:0;
+    margin: 15px auto;
+    width:95%;
+    text-align:center;
+    border-bottom:1px dotted #000080;
+}
+
+.profile-index-country p, .profile-index-career p, .profile-index-content p{
+    padding:0;
+    margin:0;
+}
+
+.profile-index-btn-area ul{
+    padding:5px 0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+
+.profile-index-btn-area li{
+    padding:0;
+    margin:0 40px;
+    display:inline-block;
+}
+
+
+
+
+// [newエリア]
+
+.profile-new-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.profile-new-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.profile-new-main{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#000080;
+}
+
+.profile-new-main p{
+    padding:0;
+    margin:50px 0 0 0;
+}
+
+.profile-new-main span{
+    padding:0;
+    margin:0;
+    color:#f00
+}
+
+.profile-new-main ul{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+}
+
+.profile-name{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-birthday{
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-age{
+    width:5%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-place{
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-area{
+    width:30%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-work{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-hobby{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-career, .profile-country, .profile-content{
+    width:50%;
+    height:100px;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-new-btn-area{
+    padding:0;
+    margin:0;
+}
+
+.profile-new-btn{
+    padding:5px 70px;
+    margin:20px 0;
+    color:#fff;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+}
+
+.profile-new-btn:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.profile-new-btn-area a:last-of-type:hover{
+    opacity:0.3;
+}
+
+
+
+
+// [editエリア]
+
+.profile-edit-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.profile-edit-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.profile-edit-main{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#000080;
+}
+
+.profile-edit-main p{
+    padding:0;
+    margin:50px 0 0 0;
+}
+
+.profile-edit-main span{
+    padding:0;
+    margin:0;
+    color:#f00
+}
+
+.profile-edit-main ul{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+}
+
+.profile-name{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-birthday{
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-age{
+    width:5%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-place{
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-area{
+    width:30%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-work{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-hobby{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-career, .profile-country, .profile-content{
+    width:50%;
+    height:100px;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-edit-btn-area{
+    padding:0;
+    margin:0;
+}
+
+.profile-edit-btn{
+    padding:5px 70px;
+    margin:20px 0;
+    color:#fff;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+}
+
+.profile-edit-btn:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.profile-edit-btn-area a:last-of-type:hover{
+    opacity:0.3;
+}
+
+
+}
+/*ここまでがタブレット用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからPC用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:1025px){
+
+// [indexエリア]
+
+.profile-index{
+    padding:0;
+    margin:0 0 50px 0;
+}
+
+.profile-index-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.profile-index-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.profile-index-new-btn{
+    margin:50px 0 20px;
+    text-align:center;
+}
+
+.profile-index-new-btn a{
+    padding:10px 100px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+}
+
+.profile-index-new-btn a:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.profile-index-back-btn{
+    padding:0;
+    margin:0 0 50px 0;
+    text-align:center;
+}
+
+.profile-index-main{
+    padding:0;
+    margin:0;
+}
+
+.profile-index-empty{
+    text-align:center;
+    margin:50px 0 0 0;
+}
+
+.profile-index-empty p{
+    color:#f00;
+    font-weight:bold;
+}
+
+.profile-index-detail{
+    padding:0;
+    margin:0 auto;
+    width:60%;
+    border:1px solid #000080;
+}
+
+.profile-index-detail span{
+    padding:0;
+    margin:0;
+    background-color:#ffff33;
+    font-weight:bold;
+}
+
+.profile-index-image{
+    padding:0;
+    margin:0;
+    width:49%;
+    display:inline-block;
+}
+
+.profile-index-image img{
+    width:100%;
+    display:inline-block;
+}
+
+.profile-index-text{
+    padding:0;
+    margin:0;
+    width:49%;
+    display:inline-block;
+}
+
+.profile-index-text ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.profile-index-text ul li{
+    padding:0;
+    margin:0 auto 10px auto;
+    width:95%;
+    border-bottom:1px solid #000080;
+}
+
+.profile-index-country, .profile-index-career, .profile-index-content{
+    padding:0;
+    margin: 15px auto;
+    width:95%;
+    text-align:center;
+    border-bottom:1px dotted #000080;
+}
+
+.profile-index-country p, .profile-index-career p, .profile-index-content p{
+    padding:0;
+    margin:0;
+}
+
+.profile-index-btn-area ul{
+    padding:5px 0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+
+.profile-index-btn-area li{
+    padding:0;
+    margin:0 40px;
+    display:inline-block;
+}
+
+
+
+
+
+// [newエリア]
+
+.profile-new-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.profile-new-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.profile-new-main{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#000080;
+}
+
+.profile-new-main p{
+    padding:0;
+    margin:50px 0 0 0;
+}
+
+.profile-new-main span{
+    padding:0;
+    margin:0;
+    color:#f00
+}
+
+.profile-new-main ul{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+}
+
+.profile-name{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-birthday{
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-age{
+    width:5%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-place{
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-area{
+    width:30%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-work{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-hobby{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-career, .profile-country, .profile-content{
+    width:50%;
+    height:100px;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-new-btn-area{
+    padding:0;
+    margin:0;
+}
+
+.profile-new-btn{
+    padding:5px 70px;
+    margin:20px 0;
+    color:#fff;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+}
+
+.profile-new-btn:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.profile-new-btn-area a:last-of-type:hover{
+    opacity:0.3;
+}
+
+
+
+
+
+// [editエリア]
+
+.profile-edit-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.profile-edit-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.profile-edit-main{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color:#000080;
+}
+
+.profile-edit-main p{
+    padding:0;
+    margin:50px 0 0 0;
+}
+
+.profile-edit-main span{
+    padding:0;
+    margin:0;
+    color:#f00
+}
+
+.profile-edit-main ul{
+    padding:0;
+    margin:50px 0;
+    list-style:none;
+}
+
+.profile-name{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-birthday{
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-age{
+    width:5%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-place{
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-area{
+    width:30%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-work{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-hobby{
+    width:40%;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-career, .profile-country, .profile-content{
+    width:50%;
+    height:100px;
+    border-radius:5px;
+    outline:none;
+}
+
+.profile-edit-btn-area{
+    padding:0;
+    margin:0;
+}
+
+.profile-edit-btn{
+    padding:5px 70px;
+    margin:20px 0;
+    color:#fff;
+    background-color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+}
+
+.profile-edit-btn:hover{
+    color:#ff9900;
+    background-color:#fff;
+}
+
+.profile-edit-btn-area a:last-of-type:hover{
+    opacity:0.3;
+}
+
+}
+/*ここまでがPC用サイズ-----------------------------------------------------------------------------*/

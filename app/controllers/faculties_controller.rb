@@ -1,4 +1,8 @@
 class FacultiesController < ApplicationController
+
+  before_action :authenticate_user!
+  before_action :admin_check
+  
   def index
     @faculties = Faculty.all.order(updated_at: :desc)
   end
@@ -24,7 +28,7 @@ class FacultiesController < ApplicationController
   
   def edit
     @faculty = Faculty.find(params[:id])
-    if @faculty.id == current_user.id
+    if @faculty.user_id == current_user.id
     else
       flash[:alert] = "権限がありません。"
       redirect_to "/faculties"
@@ -38,13 +42,24 @@ class FacultiesController < ApplicationController
       redirect_to "/faculties"
     else
       flash[:alert] = "入力に誤りがあります。"
-      render "faculties/#{@faculty.id}/edit"
+      redirect_to "/faculties/#{@faculty.id}/edit"
     end
   end
-  
+
+  def destroy
+    @faculty = Faculty.find(params[:id])
+     if @faculty.destroy
+         flash[:notice] = "削除しました！"
+         redirect_to "/faculties"
+     else
+         flash[:alert] = "削除できませんでした。"
+        redirect_to "/faculties"
+     end
+  end
+    
   private
     def faculty_params
-      params.require(:faculty).permit(:name, :image, :content, :release)
+      params.require(:faculty).permit(:name, :image, :content, :release, :user_id).merge(user_id: current_user.id)
     end
   
 end

@@ -1,10 +1,1170 @@
 /*ここからスマホ用サイズ-----------------------------------------------------------------------------*/
 @media(max-width:767px){
 
+#top-image-slide ul{
+    padding:0;
+    margin:0;
+    position:relative;
+}
+
+#top-image-slide li{
+    padding:0;
+    margin:0;
+    position:absolute;
+    width:100%;
+}
+
+#top-image-slide img{
+    width:100%;
+    height:400px;
+}
+
+.top-logo-position{
+    padding:25px;
+    margin:10px 0 0 15px;
+    width:5%;
+    position:relative;
+    background-color:#ff0;
+    border-radius:40px;
+    text-align:center;
+    float:left;
+}
+
+.top-logo-position p{
+    padding:0;
+    margin:0;
+}
+
+.top-text-position{
+    padding:0;
+    margin:30px 0 0 0;
+    width:40%;
+    position:relative;
+    text-align:center;
+    float:left;
+}
+
+.top-text-position p{
+    padding:0;
+    margin:0;
+    color:#ffff33;
+    text-shadow:1px 1px 0 #000080;
+    font-size:13px;
+}
+
+.top-text-position h3{
+    padding:0;
+    margin:0;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000080;
+    font-size:15px;
+}
+
+.top-text-position h3 span{
+    color:#ffff33;
+}
+
+.top-enroll-position{
+    padding:0;
+    margin:40px 5px 0 0;
+    position:relative;
+    text-align:center;
+    float:right;
+}
+
+.top-enroll-position a{
+    padding:5px 5px;
+    margin:0;
+    color:#ff9900;
+    background-color:#fff;
+    border:1px solid #ff9900;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+.top-enroll-position a:hover{
+    padding:5px 33px;
+    color:#fff;
+    background-color:#ff9900;
+}
+
+#dummy-top{
+    padding:0;
+    margin:330px 0 0 0;
+}
 
 
 
 
+
+.salon-introduction{
+    padding:0;
+    margin:0;
+    background-color:#fff;
+    text-align:center;
+    height:600px;
+}
+
+.salon-introduction-title{
+    // jQuert仕様-----------------------------
+    transition:0.7s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:0;
+    margin:50px 0;
+}
+
+.salon-introduction-title.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-introduction-title p{
+    padding:0;
+    margin:0;
+    font-size:20px;
+    font-weight:bold;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000080;
+}
+
+.salon-introduction-title h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    // ---------------------------------------
+    padding:0;
+    margin:0;
+}
+
+.salon-introduction-title h1.scroll{
+    // jQuert仕様-----------------------------
+    color:#6699cc;
+    text-shadow:2px 2px 0 #000080;
+    // ---------------------------------------
+}
+
+.salon-introduction-title span{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    // ---------------------------------------
+}
+
+.salon-introduction-title span.scroll{
+    // jQuert仕様-----------------------------
+    color:#ffff33;
+    text-shadow:5px 5px 2px #000080;
+    font-size:40px;
+    // ---------------------------------------
+}
+
+.salon-introduction-text{
+    margin:0 auto;
+    width:95%;
+}
+
+.salon-introduction-text h3{
+    line-height:1.8;
+    font-size:15px;
+}
+
+.salon-introduction-text span{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    // ---------------------------------------
+    font-size:18px;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000;
+}
+
+.salon-introduction-text span.scroll{
+    // jQuert仕様-----------------------------
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+
+
+
+
+.salon-about{
+    text-align:center;
+    background-color:#eee;
+    height:200px;
+    font-size:15px;
+}
+
+.salon-about h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    width:25%;
+    // ---------------------------------------
+    padding:0;
+    margin:50px auto;
+    color:#fff;
+    text-shadow:3px 3px 0 #000;
+    border-left:3px double #000;
+    border-right:3px double #000;
+}
+
+.salon-about h1.scroll{
+    // jQuert仕様-----------------------------
+    width:70%;
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-1{
+    // jQuert仕様-----------------------------
+    transition:0.7s;
+    opacity:0;
+    transform:translate(0, 100px);
+    // ---------------------------------------
+    padding:0;
+    margin:0;
+    background-color:#eee;
+    height:450px;
+}
+
+.salon-about-1.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-1 h2{
+    margin:0 auto;
+    padding:0 0 40px 0;
+    font-size:20px;
+    text-align:center;
+    color:#99ffff;
+    text-shadow:2px 2px 0 #000;
+}
+
+.salon-about-1-text{
+    padding:0;
+    margin:0 0 0 5px;
+    width:48%;
+    height:250px;
+    text-align:center;
+    float:left;
+    border-top:1px dotted #000;
+    border-bottom:1px dotted #000;
+}
+
+.salon-about-1-text p{
+    padding:0;
+    margin:5px;
+    font-size:15px;
+    font-weight:bold;
+    line-height:1.8;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.salon-about-1-text span{
+    padding:0;
+    margin:0;
+    font-size:13px;
+    color:#000080;
+}
+
+.salon-about-1-image{
+    padding:0;
+    margin:0;
+    float:left;
+    width:49%;
+    height:250px;
+}
+
+.salon-about-1-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:250px;
+    border-radius:10px;
+}
+
+
+
+
+
+
+.salon-about-2{
+    // jQuert仕様-----------------------------
+    transition:0.7s;
+    opacity:0;
+    transform:translate(0, 100px);
+    // ---------------------------------------
+    padding:50px 0 0 0;
+    margin:0;
+    background-color:#fff;
+    height:450px;
+}
+
+.salon-about-2.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-2 h2{
+    padding:0;
+    margin:0 auto 50px;
+    width:80%;
+    text-align:center;
+    color:#66ffcc;
+    text-shadow:2px 2px 0 #008000;
+    border-bottom:5px double #66ffcc;
+}
+
+.salon-about-2-text{
+    padding:0;
+    margin:0 5px 0 0;
+    width:48%;
+    height:260px;
+    text-align:center;
+    float:right;
+    border-top:1px dotted #000;
+    border-bottom:1px dotted #000;
+}
+
+.salon-about-2-text p{
+    padding:0;
+    margin:10px 0 0 0;
+    font-size:15px;
+    font-weight:bold;
+    line-height:1.8;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000080;
+}
+
+.salon-about-2-text span{
+    // jQuert仕様-----------------------------
+    transition:2s;
+    // ---------------------------------------
+    padding:0;
+    margin:0;
+    color:#000080;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.salon-about-2-text span.scroll{
+    // jQuert仕様-----------------------------
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-2-image{
+    padding:0;
+    margin:0;
+    float:right;
+    width:50%;
+    height:260px;
+}
+
+.salon-about-2-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:260px;
+    border-radius:10px;
+}
+
+
+
+
+
+
+.salon-about-3{
+    padding:100px 0;
+    margin:0;
+    background-color:#99ffff;
+}
+
+.salon-about-3 h2{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 100px);
+    // ---------------------------------------
+    padding:00;
+    margin:0 auto 50px;
+    width:85%;
+    text-align:center;
+    color:#6699cc;
+    text-shadow:2px 2px 0 #fff;
+    border-bottom:5px double #6699cc;
+    font-size:20px;
+}
+
+.salon-about-3 h2.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-3-text{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 100px);
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto 100px;
+    width:85%;
+    text-align:center;
+    border-top:1px dotted #000;
+    border-bottom:1px dotted #000;
+}
+
+.salon-about-3-text.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-3-text p{
+    padding:0;
+    margin:10px 0;
+    font-size:17px;
+    font-weight:bold;
+    line-height:1.8;
+    color:#000;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.salon-about-3-faculty{
+    margin:0 auto;
+    width:95%;
+}
+
+.top-faculty{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 100px);
+    // ---------------------------------------
+    padding:0;
+    margin:50px auto;
+    width:80%;
+    box-shadow:10px 10px 0 #6699cc;
+    background-color:#fff;
+    border-radius:3px;
+}
+
+.top-faculty.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.top-faculty-name{
+    padding:5px 0;
+    margin:0;
+    text-align:center;
+    color:#6699cc;
+    font-weight:bold;
+    font-size:20px;
+    text-shadow:1px 1px 0 #99ffff;
+}
+
+.top-faculty-image{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-faculty-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-faculty-content{
+    padding:5px;
+    margin:0;
+}
+
+
+
+
+
+.salon-about-4{
+    padding:100px 0 100px;
+    margin:0;
+    background-color:#fff;
+}
+
+.salon-about-4 h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    width:25%;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto 50px;
+    text-align:center;
+    color:#66ffcc;
+    text-shadow:1px 1px 0 #000;
+    border-left:5px double #008000;
+    border-right:3px double #008000;
+}
+
+.salon-about-4 h1.scroll{
+    // jQuert仕様-----------------------------
+    width:60%;
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-4-event{
+    margin:0 auto;
+    width:95%;
+}
+
+.top-event{
+    // jQuert仕様-----------------------------
+    transition:0.7s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:0;
+    margin:40px auto;
+    width:80%;
+    box-shadow:10px 10px 0 #ccc;
+    background-color:#fff;
+    border-radius:3px;
+    border:1px solid #6699ff;
+}
+
+.top-event.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.top-event-name{
+    padding:10px 0;
+    margin:0;
+    text-align:center;
+    color:#99ffff;
+    font-weight:bold;
+    font-size:15px;
+    text-shadow:1px 1px 0 #080000;
+    background-color:#eee;
+}
+
+.top-event-day{
+    padding:0;
+    margin:0;
+    text-align:center;
+    border-bottom:1px dotted #000080;
+    color:#f00;
+    font-weight:bold;
+}
+
+.top-event-time ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+
+.top-event-time li{
+    padding:0;
+    margin:0;
+    display:inline-block;
+}
+
+.top-event-image{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-event-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-event-place{
+    padding:5px 0;
+    margin:0;
+    text-align:center;
+    font-weight:bold;
+    background-color:#eee;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.salon-about-4-text{
+    // jQuert仕様-----------------------------
+    transition:1.5s;
+    opacity:0;
+    // ---------------------------------------
+    padding:20px 0;
+    margin:20px auto;
+    width:80%;
+    text-align:center;
+    border-top:1px dotted #ccc;
+    border-bottom:1px dotted #ccc;
+}
+
+.salon-about-4-text.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    // ---------------------------------------
+}
+
+.salon-about-4-text p{
+    padding:0;
+    margin:0 0 20px 0;
+    font-size:13px;
+}
+
+.salon-about-4-text a{
+    padding:5px 20px;
+    margin:0;
+    color:#000080;
+    background-color:#fff;
+    border:1px solid #000080;
+    text-decoration:none;
+    transition: 0.4s;
+    border-radius:5px;
+}
+
+.salon-about-4-text a:hover{
+    color:#fff;
+    background-color:#000080;
+}
+
+
+
+
+
+.salon-about-5{
+    padding:100px 0 70px;
+    margin:0;
+    background-color:#eee;
+}
+
+.salon-about-5 h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    width:25%;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto 50px;
+    width:13%;
+    text-align:center;
+    color:#000080;
+    text-shadow:1px 1px 0 #fff;
+    border-left:5px double #000080;
+    border-right:3px double #000080;
+}
+
+.salon-about-5 h1.scroll{
+    // jQuert仕様-----------------------------
+    width:70%;
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-5-news{
+    padding:0;
+    margin:0 auto;
+    width:95%;
+}
+
+.top-news{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:0 0 3px 0;
+    margin:0 0 40px 0;
+    border-bottom:1px dotted #000080;
+    text-align:center;
+}
+
+.top-news.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.top-news-day{
+    padding:0;
+    margin:0 0 10px 0;
+}
+
+.top-news-content{
+    padding:0;
+    margin:0;
+    font-weight:bold;
+    color:#f00;
+}
+
+
+
+
+
+.salon-about-6{
+    padding:70px 0;
+    margin:0;
+    background-color:#fff;
+}
+
+.salon-about-6 h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    width:20%;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto 50px;
+    width:13%;
+    text-align:center;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #99ffff;
+    border-left:5px double #6699cc;
+    border-right:3px double #6699cc;
+}
+
+.salon-about-6 h1.scroll{
+    // jQuert仕様-----------------------------
+    width:70%;
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-6-fee{
+    padding:0;
+    margin:0 auto;
+    width:95%;
+}
+
+.top-fee{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:0;
+    margin:20px auto 0;
+    width:48%;
+    display:inline-block;
+    border:2px solid #6699cc;
+}
+
+.top-fee.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.top-fee-name-price{
+    padding:0;
+    margin:0;
+}
+
+.top-fee-name-price ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+    font-weight:bold;
+    border-bottom:1px solid #000080;
+}
+
+.top-fee-name-price span{
+    font-size:13px;
+    font-weight:normal;
+    color:#000;
+}
+
+.top-fee-name-price li:first-of-type{
+    background-color:#6699cc;
+    color:#fff;
+}
+
+.top-fee-name-price li:last-of-type{
+    color:#f00;
+    font-size:20px;
+}
+
+.top-fee-text{
+    padding:0 5px;
+    margin:0;
+    height:100px;
+}
+
+.salon-about-6-enroll{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:30px 0;
+    margin:0;
+    text-align:center;
+}
+
+.salon-about-6-enroll.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-6-enroll a{
+    padding:5px 70px;
+    margin:0;
+    color:#ff9900;
+    background-color:#fff;
+    border:1px solid #ff9900;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.8s;
+}
+
+.salon-about-6-enroll a:hover{
+    color:#fff;
+    background-color:#ff9900;
+}
+
+
+
+
+
+.salon-about-7{
+    padding:70px 0;
+    margin:0;
+    // background-color:#99ffff;
+    background-image:url(/assets/profile-background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.salon-about-7 h1{
+    padding:0;
+    margin:0 auto;
+    width:80%;
+    text-align:center;
+    color:#fff;
+    text-shadow:3px 3px 0 #000080;
+    font-size:25px;
+}
+
+.salon-about-7-p{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    width:0.1px;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto;
+    border-bottom:4px solid #fff;
+    box-shadow:3px 3px 0 #000080;
+}
+
+.salon-about-7-p.scroll{
+    // jQuert仕様-----------------------------
+    width:90%;
+    // ---------------------------------------
+}
+
+.top-profile{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    // ---------------------------------------
+    padding:0;
+    margin:100px auto 0;
+    width:95%;
+    background-color:#fff;
+    border:5px ridge #6699ff;
+    color:#000080;
+}
+
+.top-profile span.scroll{
+    // jQuert仕様-----------------------------
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.top-profile-image{
+    padding:0;
+    margin:0;
+    width:49%;
+    height:200px;
+    display:inline-block;
+}
+
+.top-profile-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-profile-detail{
+    padding:0;
+    margin:0;
+    width:49%;
+    height:200px;
+    display:inline-block;
+}
+
+.top-profile-detail ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.top-profile-detail li{
+    padding:0;
+    margin:5px 0;
+    font-size:11.5px;
+}
+
+.top-profile-detail span{
+    padding:0;
+    margin:0;
+}
+
+.top-profile-country{
+    padding:0 10px;
+    margin:10px 0 0 0;
+    text-align:center;
+}
+
+.top-profile-country ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    font-size:13px;
+}
+
+.top-profile-country span{
+    padding:0;
+    margin:0;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.top-profile-career{
+    padding:0 10px;
+    margin:20px 0 0 0;
+    text-align:center;
+}
+
+.top-profile-career ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    font-size:13px;
+}
+
+.top-profile-career span{
+    padding:0;
+    margin:0;
+    font-weight:bold;
+    font-size:15px;
+}
+
+
+
+
+
+.salon-about-8{
+    padding:150px 0 100px;
+    margin:0;
+    background-color:#fff;
+}
+
+.salon-about-8 h2{
+    padding:0;
+    margin:0 auto;
+    width:80%;
+    color:#000080;
+    text-align:center;
+    text-shadow:2px 2px 0 #6699cc;
+}
+
+.salon-about-8-p{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    width:0.1%;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto;
+    border-bottom:3px solid #6699cc;
+}
+
+.salon-about-8-p.scroll{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    width:85%;
+    // ---------------------------------------
+}
+
+.salon-about-8-sub{
+    padding:0;
+    margin:100px auto 0;
+    width:95%;
+}
+
+.enroll-area, .contact-area, .wanted-area{
+    padding:0 0 30px 0;
+    margin:20px auto 0;
+    width:80%;
+    text-align:center;
+    background-color:#fff;
+    border-radius:5px;
+}
+
+.enroll-area p, .contact-area p, .wanted-area p{
+    padding:10px 0 20px;
+    margin:0;
+}
+
+.enroll-area{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    transform:translate(0, 80px);
+    opacity:0;
+    // ---------------------------------------
+    border:5px double #ff9900;
+    box-shadow:3px 3px 0 #ff9900;
+}
+
+.enroll-area.scroll{
+    // jQuert仕様-----------------------------
+    transform:translate(0, 0);
+    opacity:1;
+    // ---------------------------------------
+}
+
+.enroll-area a{
+    padding:5px 30px;
+    margin:0;
+    color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:5px;
+}
+
+.contact-area{
+    // jQuert仕様-----------------------------
+    transition:1.1s;
+    transform:translate(0, 80px);
+    opacity:0;
+    // ---------------------------------------
+    border:5px double #6699cc;
+    box-shadow:3px 3px 0 #3399ff;
+}
+
+.contact-area.scroll{
+    // jQuert仕様-----------------------------
+    transform:translate(0, 0);
+    opacity:1;
+    // ---------------------------------------
+}
+
+.contact-area a{
+    padding:5px 50px;
+    margin:0;
+    color:#6699cc;
+    border:1px solid #6699cc;
+    border-radius:5px;
+}
+
+.wanted-area{
+    // jQuert仕様-----------------------------
+    transition:1.5s;
+    transform:translate(0, 80px);
+    opacity:0;
+    // ---------------------------------------
+    border:5px double #3cb371;
+    box-shadow:3px 3px 0 #33cc00;
+}
+
+.wanted-area.scroll{
+    // jQuert仕様-----------------------------
+    transform:translate(0, 0);
+    opacity:1;
+    // ---------------------------------------
+}
+
+.wanted-area a{
+    padding:5px 30px;
+    margin:0;
+    color:#3cb371;
+    border:1px solid #3cb371;
+    border-radius:5px;
+}
+
+.enroll-area a, .contact-area a, .wanted-area a{
+    text-decoration:none;
+    background-color:#fff;
+}
+
+.salon-about-8-text{
+    // jQuert仕様-----------------------------
+    transition:2s;
+    opacity:0;
+    // ---------------------------------------
+    padding:0;
+    margin:40px auto 0;
+    width:80%;
+    border-top:1px dotted #000080;
+    border-bottom:1px dotted #000080;
+    font-size:12px;
+}
+
+.salon-about-8-text.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    // ---------------------------------------
+}
+
+.salon-about-8-text ul{
+    padding:0;
+    margin:0 auto;
+    width:90%;
+}
+
+.salon-about-8-text li{
+    padding:0;
+    margin:10px 0;
+}
+
+
+
+
+// ---------スクロールエリア-----------
+
+#about-scroll, #event-scroll, #news-scroll, #fee-scroll, #profile-scroll, #enroll-scroll{
+    padding:0;
+    margin:20px 0 0 0;
+}
+
+// ---------------------------------------
 
 
 }
@@ -17,8 +1177,1162 @@
 /*ここからタブレット用サイズ-----------------------------------------------------------------------------*/
 @media(min-width:768px) and (max-width:1024px){
 
+#top-image-slide ul{
+    padding:0;
+    margin:0;
+    position:relative;
+}
+
+#top-image-slide li{
+    padding:0;
+    margin:0;
+    position:absolute;
+    width:100%;
+}
+
+#top-image-slide img{
+    width:100%;
+    height:570px;
+}
+
+.top-logo-position{
+    padding:25px 20px;
+    margin:20px 0 0 20px;
+    width:5%;
+    position:relative;
+    background-color:#ff0;
+    border-radius:40px;
+    text-align:center;
+    float:left;
+}
+
+.top-logo-position p{
+    padding:0;
+    margin:0;
+}
+
+.top-text-position{
+    padding:0;
+    margin:30px 0 0 0;
+    width:35%;
+    position:relative;
+    text-align:center;
+    float:left;
+}
+
+.top-text-position p{
+    padding:0;
+    margin:0;
+    color:#ffff33;
+    text-shadow:1px 1px 0 #000080;
+}
+
+.top-text-position h3{
+    padding:0;
+    margin:0;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000080;
+}
+
+.top-text-position h3 span{
+    color:#ffff33;
+}
+
+.top-enroll-position{
+    padding:0;
+    margin:40px 10px 0 0;
+    position:relative;
+    text-align:center;
+    float:right;
+}
+
+.top-enroll-position a{
+    padding:5px 40px;
+    margin:0;
+    color:#ff9900;
+    background-color:#fff;
+    border:1px solid #ff9900;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+.top-enroll-position a:hover{
+    padding:5px 68px;
+    color:#fff;
+    background-color:#ff9900;
+}
+
+#dummy-top{
+    padding:0;
+    margin:420px 0 0 0;
+}
 
 
+
+
+
+.salon-introduction{
+    padding:0;
+    margin:0;
+    background-color:#fff;
+    text-align:center;
+    height:600px;
+}
+
+.salon-introduction-title{
+    // jQuert仕様-----------------------------
+    transition:0.7s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:0;
+    margin:50px 0;
+}
+
+.salon-introduction-title.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-introduction-title p{
+    padding:0;
+    margin:0;
+    font-weight:bold;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000080;
+    font-size:20px;
+}
+
+.salon-introduction-title h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    // ---------------------------------------
+    padding:0;
+    margin:0;
+}
+
+.salon-introduction-title h1.scroll{
+    // jQuert仕様-----------------------------
+    color:#6699cc;
+    text-shadow:2px 2px 0 #000080;
+    // ---------------------------------------
+}
+
+.salon-introduction-title span{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    // ---------------------------------------
+}
+
+.salon-introduction-title span.scroll{
+    // jQuert仕様-----------------------------
+    color:#ffff33;
+    text-shadow:5px 5px 2px #000080;
+    font-size:50px;
+    // ---------------------------------------
+}
+
+.salon-introduction-text{
+    margin:0 auto;
+    width:95%;
+}
+
+.salon-introduction-text h3{
+    line-height:1.8;
+}
+
+.salon-introduction-text span{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    // ---------------------------------------
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000;
+    font-size:25px;
+}
+
+.salon-introduction-text span.scroll{
+    // jQuert仕様-----------------------------
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+
+
+
+
+.salon-about{
+    text-align:center;
+    background-color:#eee;
+    height:200px;
+}
+
+.salon-about h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    width:20%;
+    // ---------------------------------------
+    padding:0;
+    margin:50px auto;
+    color:#fff;
+    text-shadow:3px 3px 0 #000;
+    border-left:3px double #000;
+    border-right:3px double #000;
+}
+
+.salon-about h1.scroll{
+    // jQuert仕様-----------------------------
+    width:50%;
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-1{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 100px);
+    // ---------------------------------------
+    padding:0;
+    margin:0;
+    background-color:#eee;
+    height:450px;
+}
+
+.salon-about-1.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-1 h2{
+    margin:0 auto;
+    padding:0 0 40px 0;
+    text-align:center;
+    color:#99ffff;
+    text-shadow:2px 2px 0 #000;
+}
+
+.salon-about-1-text{
+    padding:0;
+    margin:0 0 0 70px;
+    width:40%;
+    height:250px;
+    text-align:center;
+    float:left;
+    border-top:1px dotted #000;
+    border-bottom:1px dotted #000;
+}
+
+.salon-about-1-text p{
+    padding:0;
+    margin:10px 0 0 0;
+    font-size:17px;
+    font-weight:bold;
+    line-height:1.8;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.salon-about-1-text span{
+    padding:0;
+    margin:0;
+    font-size:13px;
+    color:#000080;
+}
+
+.salon-about-1-image{
+    padding:0;
+    margin:0;
+    float:left;
+    width:40%;
+    height:250px;
+}
+
+.salon-about-1-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:250px;
+    border-radius:10px;
+}
+
+
+
+
+.salon-about-2{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    opacity:0;
+    transform:translate(-100px, 0);
+    // ---------------------------------------
+    padding:50px 0 0 0;
+    margin:0;
+    background-color:#fff;
+    height:450px;
+}
+
+.salon-about-2.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-2 h2{
+    padding:0;
+    margin:0 auto 50px;
+    width:60%;
+    text-align:center;
+    color:#66ffcc;
+    text-shadow:2px 2px 0 #008000;
+    border-bottom:5px double #66ffcc;
+}
+
+.salon-about-2-text{
+    padding:0;
+    margin:0 40px 0 0;
+    width:50%;
+    height:250px;
+    text-align:center;
+    float:right;
+    border-top:1px dotted #000;
+    border-bottom:1px dotted #000;
+}
+
+.salon-about-2-text p{
+    padding:0;
+    margin:10px 0 0 0;
+    font-size:17px;
+    font-weight:bold;
+    line-height:1.5;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000080;
+}
+
+.salon-about-2-text span{
+    // jQuert仕様-----------------------------
+    transition:2s;
+    // ---------------------------------------
+    padding:0;
+    margin:0;
+    color:#000080;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.salon-about-2-text span.scroll{
+    // jQuert仕様-----------------------------
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-2-image{
+    padding:0;
+    margin:0;
+    float:right;
+    width:40%;
+    height:250px;
+}
+
+.salon-about-2-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:250px;
+    border-radius:10px;
+}
+
+
+
+
+
+.salon-about-3{
+    padding:100px 0 150px;
+    margin:0;
+    background-color:#99ffff;
+}
+
+.salon-about-3 h2{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 100px);
+    // ---------------------------------------
+    padding:00;
+    margin:0 auto 50px;
+    width:70%;
+    text-align:center;
+    color:#6699cc;
+    text-shadow:2px 2px 0 #fff;
+    border-bottom:5px double #6699cc;
+}
+
+.salon-about-3 h2.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-3-text{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 100px);
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto 100px;
+    width:75%;
+    text-align:center;
+    border-top:1px dotted #000;
+    border-bottom:1px dotted #000;
+}
+
+.salon-about-3-text.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-3-text p{
+    padding:0;
+    margin:10px 0;
+    font-size:20px;
+    font-weight:bold;
+    line-height:1.8;
+    color:#000;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.salon-about-3-faculty{
+    margin:0 auto;
+    width:95%;
+}
+
+.top-faculty{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 100px);
+    // ---------------------------------------
+    padding:0;
+    margin:30px 15px;
+    width:45%;
+    display:inline-block;
+    box-shadow:10px 10px 0 #6699cc;
+    background-color:#fff;
+    border-radius:3px;
+}
+
+.top-faculty.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.top-faculty-name{
+    padding:5px 0;
+    margin:0;
+    text-align:center;
+    color:#6699cc;
+    font-weight:bold;
+    font-size:20px;
+    text-shadow:1px 1px 0 #99ffff;
+}
+
+.top-faculty-image{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-faculty-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-faculty-content{
+    padding:5px;
+    margin:0;
+}
+
+
+
+
+
+.salon-about-4{
+    padding:100px 0 100px;
+    margin:0;
+    background-color:#fff;
+}
+
+.salon-about-4 h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    width:20%;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto 50px;
+    text-align:center;
+    color:#66ffcc;
+    text-shadow:1px 1px 0 #000;
+    border-left:5px double #008000;
+    border-right:3px double #008000;
+}
+
+.salon-about-4 h1.scroll{
+    // jQuert仕様-----------------------------
+    width:60%;
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-4-event{
+    margin:0 auto;
+    width:90%;
+}
+
+.top-event{
+    // jQuert仕様-----------------------------
+    transition:0.7s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:0;
+    margin:30px 15px;
+    width:45%;
+    display:inline-block;
+    box-shadow:10px 10px 0 #ccc;
+    background-color:#fff;
+    border-radius:3px;
+    border:1px solid #6699ff;
+}
+
+.top-event.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.top-event-name{
+    padding:10px 0;
+    margin:0;
+    text-align:center;
+    color:#99ffff;
+    font-weight:bold;
+    font-size:15px;
+    text-shadow:1px 1px 0 #080000;
+    background-color:#eee;
+}
+
+.top-event-day{
+    padding:0;
+    margin:0;
+    text-align:center;
+    border-bottom:1px dotted #000080;
+    color:#f00;
+    font-weight:bold;
+}
+
+.top-event-time ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+
+.top-event-time li{
+    padding:0;
+    margin:0;
+    display:inline-block;
+}
+
+.top-event-image{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-event-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-event-place{
+    padding:5px 0;
+    margin:0;
+    text-align:center;
+    font-weight:bold;
+    background-color:#eee;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.salon-about-4-text{
+    // jQuert仕様-----------------------------
+    transition:1.5s;
+    opacity:0;
+    // ---------------------------------------
+    padding:20px 0;
+    margin:20px auto;
+    width:80%;
+    text-align:center;
+    border-top:1px dotted #ccc;
+    border-bottom:1px dotted #ccc;
+}
+
+.salon-about-4-text.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    // ---------------------------------------
+}
+
+.salon-about-4-text p{
+    padding:0;
+    margin:0 0 20px 0;
+}
+
+.salon-about-4-text a{
+    padding:5px 20px;
+    margin:0;
+    color:#000080;
+    background-color:#fff;
+    border:1px solid #000080;
+    text-decoration:none;
+    transition: 0.4s;
+    border-radius:5px;
+}
+
+.salon-about-4-text a:hover{
+    color:#fff;
+    background-color:#000080;
+}
+
+
+
+
+
+.salon-about-5{
+    padding:100px 0;
+    margin:0;
+    background-color:#eee;
+}
+
+.salon-about-5 h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    width:20%;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto 50px;
+    width:13%;
+    text-align:center;
+    color:#000080;
+    text-shadow:1px 1px 0 #fff;
+    border-left:5px double #000080;
+    border-right:3px double #000080;
+}
+
+.salon-about-5 h1.scroll{
+    // jQuert仕様-----------------------------
+    width:70%;
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-5-news{
+    padding:0;
+    margin:0 auto;
+    width:85%;
+}
+
+.top-news{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:0 0 3px 0;
+    margin:0 0 40px 0;
+    border-bottom:1px dotted #000080;
+}
+
+.top-news.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.top-news-day{
+    padding:0;
+    margin:0 0 0 20px;
+    display:inline-block;
+}
+
+.top-news-content{
+    padding:0;
+    margin:0 0 0 50px;
+    display:inline-block;
+    font-weight:bold;
+    color:#f00;
+}
+
+
+
+
+
+.salon-about-6{
+    padding:70px 0;
+    margin:0;
+    background-color:#fff;
+}
+
+.salon-about-6 h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    width:15%;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto 50px;
+    width:13%;
+    text-align:center;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #99ffff;
+    border-left:5px double #6699cc;
+    border-right:3px double #6699cc;
+}
+
+.salon-about-6 h1.scroll{
+    // jQuert仕様-----------------------------
+    width:70%;
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-6-fee{
+    padding:0;
+    margin:0 auto;
+    width:90%;
+}
+
+.top-fee{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:0;
+    margin:20px auto 0;
+    width:32%;
+    display:inline-block;
+    border:2px solid #6699cc;
+}
+
+.top-fee.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.top-fee-name-price{
+    padding:0;
+    margin:0;
+}
+
+.top-fee-name-price ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+    font-weight:bold;
+    border-bottom:1px solid #000080;
+}
+
+.top-fee-name-price span{
+    font-size:13px;
+    font-weight:normal;
+    color:#000;
+}
+
+.top-fee-name-price li:first-of-type{
+    background-color:#6699cc;
+    color:#fff;
+}
+
+.top-fee-name-price li:last-of-type{
+    color:#f00;
+    font-size:20px;
+}
+
+.top-fee-text{
+    padding:0 5px;
+    margin:0;
+    height:100px;
+}
+
+.salon-about-6-enroll{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:30px 0;
+    margin:0;
+    text-align:center;
+}
+
+.salon-about-6-enroll.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-6-enroll a{
+    padding:5px 70px;
+    margin:0;
+    color:#ff9900;
+    background-color:#fff;
+    border:1px solid #ff9900;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.8s;
+}
+
+.salon-about-6-enroll a:hover{
+    color:#fff;
+    background-color:#ff9900;
+}
+
+
+
+
+
+.salon-about-7{
+    padding:70px 0;
+    margin:0;
+    // background-color:#99ffff;
+    background-image:url(/assets/profile-background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.salon-about-7 h1{
+    padding:0;
+    margin:0 auto;
+    width:80%;
+    text-align:center;
+    color:#fff;
+    text-shadow:3px 3px 0 #000080;
+}
+
+.salon-about-7-p{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    width:0.1px;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto;
+    border-bottom:4px solid #fff;
+    box-shadow:3px 3px 0 #000080;
+}
+
+.salon-about-7-p.scroll{
+    // jQuert仕様-----------------------------
+    width:80%;
+    // ---------------------------------------
+}
+
+.top-profile{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    // ---------------------------------------
+    padding:0;
+    margin:100px auto 0;
+    width:90%;
+    background-color:#fff;
+    border:5px ridge #6699ff;
+    color:#000080;
+}
+
+.top-profile span.scroll{
+    // jQuert仕様-----------------------------
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.top-profile-image{
+    padding:0;
+    margin:0;
+    width:49%;
+    height:280px;
+    display:inline-block;
+}
+
+.top-profile-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:280px;
+}
+
+.top-profile-detail{
+    padding:0;
+    margin:0;
+    width:49%;
+    height:280px;
+    display:inline-block;
+}
+
+.top-profile-detail ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.top-profile-detail li{
+    padding:0;
+    margin:12px 0;
+}
+
+.top-profile-detail span{
+    padding:0;
+    margin:0;
+}
+
+.top-profile-country{
+    padding:0 10px;
+    margin:20px 0 0 0;
+    text-align:center;
+}
+
+.top-profile-country ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.top-profile-country span{
+    padding:0;
+    margin:0;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.top-profile-career{
+    padding:0 10px;
+    margin:20px 0 0 0;
+    text-align:center;
+}
+
+.top-profile-career ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.top-profile-career span{
+    padding:0;
+    margin:0;
+    font-size:20px;
+    font-weight:bold;
+}
+
+
+
+
+
+
+.salon-about-8{
+    padding:60px 0 100px;
+    margin:0;
+    background-color:#fff;
+}
+
+.salon-about-8 h2{
+    padding:0;
+    margin:0 auto;
+    width:50%;
+    color:#000080;
+    text-align:center;
+    text-shadow:2px 2px 0 #6699cc;
+}
+
+.salon-about-8-p{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    width:0.1%;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto;
+    border-bottom:3px solid #6699cc;
+}
+
+.salon-about-8-p.scroll{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    width:60%;
+    // ---------------------------------------
+}
+
+.salon-about-8-sub{
+    padding:0;
+    margin:100px auto 0;
+    width:95%;
+}
+
+.enroll-area, .contact-area, .wanted-area{
+    padding:0 0 30px 0;
+    margin:10px 25px;
+    width:40%;
+    display:inline-block;
+    text-align:center;
+    background-color:#fff;
+    border-radius:5px;
+}
+
+.enroll-area p, .contact-area p, .wanted-area p{
+    padding:20px 0 40px;
+    margin:0;
+}
+
+.enroll-area{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    transform:translate(0, 80px);
+    opacity:0;
+    // ---------------------------------------
+    border:5px double #ff9900;
+    box-shadow:3px 3px 0 #ff9900;
+}
+
+.enroll-area.scroll{
+    // jQuert仕様-----------------------------
+    transform:translate(0, 0);
+    opacity:1;
+    // ---------------------------------------
+}
+
+.enroll-area a{
+    padding:5px 30px;
+    margin:0;
+    color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:5px;
+}
+
+.contact-area{
+    // jQuert仕様-----------------------------
+    transition:1.1s;
+    transform:translate(0, 80px);
+    opacity:0;
+    // ---------------------------------------
+    border:5px double #6699cc;
+    box-shadow:3px 3px 0 #3399ff;
+}
+
+.contact-area.scroll{
+    // jQuert仕様-----------------------------
+    transform:translate(0, 0);
+    opacity:1;
+    // ---------------------------------------
+}
+
+.contact-area a{
+    padding:5px 30px;
+    margin:0;
+    color:#6699cc;
+    border:1px solid #6699cc;
+    border-radius:5px;
+}
+
+.wanted-area{
+    // jQuert仕様-----------------------------
+    transition:1.5s;
+    transform:translate(0, 80px);
+    opacity:0;
+    // ---------------------------------------
+    border:5px double #3cb371;
+    box-shadow:3px 3px 0 #33cc00;
+}
+
+.wanted-area.scroll{
+    // jQuert仕様-----------------------------
+    transform:translate(0, 0);
+    opacity:1;
+    // ---------------------------------------
+}
+
+.wanted-area a{
+    padding:5px 30px;
+    margin:0;
+    color:#3cb371;
+    border:1px solid #3cb371;
+    border-radius:5px;
+}
+
+.enroll-area a, .contact-area a, .wanted-area a{
+    text-decoration:none;
+    background-color:#fff;
+}
+
+.salon-about-8-text{
+    // jQuert仕様-----------------------------
+    transition:2s;
+    opacity:0;
+    // ---------------------------------------
+    padding:0;
+    margin:40px auto 0;
+    width:90%;
+    border-top:1px dotted #000080;
+    border-bottom:1px dotted #000080;
+    font-size:14px;
+}
+
+.salon-about-8-text.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    // ---------------------------------------
+}
+
+.salon-about-8-text ul{
+    padding:0;
+    margin:0 auto;
+    width:90%;
+}
+
+.salon-about-8-text li{
+    padding:0;
+    margin:10px 0;
+}
+
+
+
+
+
+// ---------スクロールエリア-----------
+
+#about-scroll, #event-scroll, #news-scroll, #fee-scroll, #profile-scroll, #enroll-scroll{
+    padding:0;
+    margin:40px 0 0 0;
+}
+
+// ---------------------------------------
 
 
 }
@@ -49,30 +2363,101 @@
     height:750px;
 }
 
-#top-image-btn{
+.top-logo-position{
+    padding:30px 10px;
+    margin:30px 0 0 50px;
+    width:5%;
+    position:relative;
+    background-color:#ff0;
+    border-radius:40px;
     text-align:center;
-    margin-top:750px;
+    float:left;
 }
 
-#top-image-btn ul li a{
-    text-indent:-9999px;
+.top-logo-position p{
+    padding:0;
+    margin:0;
+}
+
+.top-text-position{
+    padding:0;
+    margin:50px 0 0 0;
+    width:20%;
+    position:relative;
+    text-align:center;
+    float:left;
+}
+
+.top-text-position p{
+    padding:0;
+    margin:0;
+    color:#ffff33;
+    text-shadow:1px 1px 0 #000080;
+}
+
+.top-text-position h3{
+    padding:0;
+    margin:0;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000080;
+}
+
+.top-text-position h3 span{
+    color:#ffff33;
+}
+
+.top-enroll-position{
+    padding:0;
+    margin:50px 20px 0 0;
+    position:relative;
+    text-align:center;
+    float:right;
+}
+
+.top-enroll-position a{
+    padding:5px 50px;
+    margin:0;
+    color:#ff9900;
+    background-color:#fff;
+    border:1px solid #ff9900;
+    border-radius:5px;
     text-decoration:none;
-    display:block;
-    width:14px;
-    height:14px;
-    border-radius:7px;
-    background-color:#a8dcdb;
 }
 
-#top-image-btn ul{
-    list-style:none;
+.top-enroll-position a:hover{
+    padding:5px 77px;
+    color:#fff;
+    background-color:#ff9900;
 }
 
-#top-image-btn li{
-    display:inline-block;
-    margin:0 3px;
-}
+// #top-image-btn{
+//     text-align:center;
+//     margin-top:650px;
+// }
 
+// #top-image-btn ul li a{
+//     text-indent:-9999px;
+//     text-decoration:none;
+//     display:block;
+//     width:14px;
+//     height:14px;
+//     border-radius:7px;
+//     background-color:#a8dcdb;
+// }
+
+// #top-image-btn ul{
+//     list-style:none;
+// }
+
+// #top-image-btn li{
+//     display:inline-block;
+//     margin:0 3px;
+// }
+
+#dummy-top{
+    padding:0;
+    margin:640px 0 0 0;
+}
 
 
 
@@ -86,19 +2471,58 @@
 }
 
 .salon-introduction-title{
+    // jQuert仕様-----------------------------
+    transition:0.5s;
+    opacity:0;
+    transform:translate(-70px, 0);
+    // ---------------------------------------
     padding:0;
     margin:50px 0;
+}
+
+.salon-introduction-title.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
 }
 
 .salon-introduction-title p{
     padding:0;
     margin:0;
+    font-size:20px;
     font-weight:bold;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000080;
 }
 
 .salon-introduction-title h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    // ---------------------------------------
     padding:0;
     margin:0;
+}
+
+.salon-introduction-title h1.scroll{
+    // jQuert仕様-----------------------------
+    color:#6699cc;
+    text-shadow:2px 2px 0 #000080;
+    // ---------------------------------------
+}
+
+.salon-introduction-title span{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    // ---------------------------------------
+}
+
+.salon-introduction-title span.scroll{
+    // jQuert仕様-----------------------------
+    color:#ffff33;
+    text-shadow:5px 5px 2px #000080;
+    font-size:50px;
+    // ---------------------------------------
 }
 
 .salon-introduction-text h3{
@@ -106,33 +2530,67 @@
 }
 
 .salon-introduction-text span{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    // ---------------------------------------
     font-size:23px;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000;
+}
+
+.salon-introduction-text span.scroll{
+    // jQuert仕様-----------------------------
+    background-color:#ffff33;
+    // ---------------------------------------
 }
 
 .salon-about{
     text-align:center;
     background-color:#eee;
-    height:150px;
+    height:200px;
 }
 
 .salon-about h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    width:10%;
+    // ---------------------------------------
     padding:0;
     margin:50px auto;
-    width:13%;
     color:#fff;
     text-shadow:3px 3px 0 #000;
     border-left:3px double #000;
     border-right:3px double #000;
 }
 
+.salon-about h1.scroll{
+    // jQuert仕様-----------------------------
+    width:50%;
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
 .salon-about-1{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(-100px, 0);
+    // ---------------------------------------
     padding:0;
     margin:0;
     background-color:#eee;
     height:450px;
 }
 
+.salon-about-1.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
 .salon-about-1 h2{
+    margin:0 auto;
     padding:0 0 40px 0;
     text-align:center;
     color:#99ffff;
@@ -156,6 +2614,8 @@
     font-size:20px;
     font-weight:bold;
     line-height:1.8;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #fff;
 }
 
 .salon-about-1-text span{
@@ -185,17 +2645,32 @@
 
 
 .salon-about-2{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    opacity:0;
+    transform:translate(-100px, 0);
+    // ---------------------------------------
     padding:50px 0 0 0;
     margin:0;
     background-color:#fff;
     height:450px;
 }
 
+.salon-about-2.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
 .salon-about-2 h2{
-    padding:0 0 40px 0;
+    padding:0;
+    margin:0 auto 50px;
+    width:45%;
     text-align:center;
     color:#66ffcc;
-    text-shadow:2px 2px 0 #000;
+    text-shadow:2px 2px 0 #008000;
+    border-bottom:5px double #66ffcc;
 }
 
 .salon-about-2-text{
@@ -215,12 +2690,24 @@
     font-size:20px;
     font-weight:bold;
     line-height:1.8;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #000080;
 }
 
 .salon-about-2-text span{
+    // jQuert仕様-----------------------------
+    transition:2s;
+    // ---------------------------------------
     padding:0;
     margin:0;
+    color:#000080;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.salon-about-2-text span.scroll{
+    // jQuert仕様-----------------------------
     background-color:#ffff33;
+    // ---------------------------------------
 }
 
 .salon-about-2-image{
@@ -238,6 +2725,789 @@
     height:250px;
     border-radius:10px;
 }
+
+
+
+
+.salon-about-3{
+    padding:100px 0 200px;
+    margin:0;
+    background-color:#99ffff;
+}
+
+.salon-about-3 h2{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 100px);
+    // ---------------------------------------
+    padding:00;
+    margin:0 auto 50px;
+    width:45%;
+    text-align:center;
+    color:#6699cc;
+    text-shadow:2px 2px 0 #fff;
+    border-bottom:5px double #6699cc;
+}
+
+.salon-about-3 h2.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-3-text{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 100px);
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto 100px;
+    width:60%;
+    text-align:center;
+    border-top:1px dotted #000;
+    border-bottom:1px dotted #000;
+}
+
+.salon-about-3-text.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-3-text p{
+    padding:0;
+    margin:10px 0;
+    font-size:20px;
+    font-weight:bold;
+    line-height:1.8;
+    color:#000;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.salon-about-3-faculty{
+    margin:0 auto;
+    width:80%;
+}
+
+.top-faculty{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 100px);
+    // ---------------------------------------
+    padding:0;
+    margin:30px 10px;
+    width:30%;
+    display:inline-block;
+    box-shadow:10px 10px 0 #6699cc;
+    background-color:#fff;
+    border-radius:3px;
+}
+
+.top-faculty.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.top-faculty-name{
+    padding:5px 0;
+    margin:0;
+    text-align:center;
+    color:#6699cc;
+    font-weight:bold;
+    font-size:20px;
+    text-shadow:1px 1px 0 #99ffff;
+}
+
+.top-faculty-image{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-faculty-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-faculty-content{
+    padding:5px;
+    margin:0;
+}
+
+
+
+
+.salon-about-4{
+    padding:100px 0 100px;
+    margin:0;
+    background-color:#fff;
+}
+
+.salon-about-4 h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    width:10%;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto 50px;
+    text-align:center;
+    color:#66ffcc;
+    text-shadow:1px 1px 0 #000;
+    border-left:5px double #008000;
+    border-right:3px double #008000;
+}
+
+.salon-about-4 h1.scroll{
+    // jQuert仕様-----------------------------
+    width:50%;
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-4-event{
+    margin:0 auto;
+    width:80%;
+}
+
+.top-event{
+    // jQuert仕様-----------------------------
+    transition:0.7s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:0;
+    margin:30px 10px;
+    width:30%;
+    display:inline-block;
+    box-shadow:10px 10px 0 #ccc;
+    background-color:#fff;
+    border-radius:3px;
+    border:1px solid #6699ff;
+}
+
+.top-event.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.top-event-name{
+    padding:10px 0;
+    margin:0;
+    text-align:center;
+    color:#99ffff;
+    font-weight:bold;
+    font-size:15px;
+    text-shadow:1px 1px 0 #080000;
+    background-color:#eee;
+}
+
+.top-event-day{
+    padding:0;
+    margin:0;
+    text-align:center;
+    border-bottom:1px dotted #000080;
+    color:#f00;
+    font-weight:bold;
+}
+
+.top-event-time ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+
+.top-event-time li{
+    padding:0;
+    margin:0;
+    display:inline-block;
+}
+
+.top-event-image{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-event-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:200px;
+}
+
+.top-event-place{
+    padding:5px 0;
+    margin:0;
+    text-align:center;
+    font-weight:bold;
+    background-color:#eee;
+    text-shadow:1px 1px 0 #fff;
+}
+
+.salon-about-4-text{
+    // jQuert仕様-----------------------------
+    transition:1.5s;
+    opacity:0;
+    // ---------------------------------------
+    padding:20px 0;
+    margin:20px auto;
+    width:80%;
+    text-align:center;
+    border-top:1px dotted #ccc;
+    border-bottom:1px dotted #ccc;
+}
+
+.salon-about-4-text.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    // ---------------------------------------
+}
+
+.salon-about-4-text p{
+    padding:0;
+    margin:0 0 20px 0;
+}
+
+.salon-about-4-text a{
+    padding:5px 20px;
+    margin:0;
+    color:#000080;
+    background-color:#fff;
+    border:1px solid #000080;
+    text-decoration:none;
+    transition: 0.4s;
+    border-radius:5px;
+}
+
+.salon-about-4-text a:hover{
+    color:#fff;
+    background-color:#000080;
+}
+
+
+
+
+
+.salon-about-5{
+    padding:100px 0;
+    margin:0;
+    background-color:#eee;
+}
+
+.salon-about-5 h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    width:10%;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto 50px;
+    width:13%;
+    text-align:center;
+    color:#000080;
+    text-shadow:1px 1px 0 #fff;
+    border-left:5px double #000080;
+    border-right:3px double #000080;
+}
+
+.salon-about-5 h1.scroll{
+    // jQuert仕様-----------------------------
+    width:50%;
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-5-news{
+    padding:0;
+    margin:0 auto;
+    width:60%;
+}
+
+.top-news{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:0 0 3px 0;
+    margin:0 0 40px 0;
+    border-bottom:1px dotted #000080;
+}
+
+.top-news.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.top-news-day{
+    padding:0;
+    margin:0 0 0 20px;
+    display:inline-block;
+}
+
+.top-news-content{
+    padding:0;
+    margin:0 0 0 50px;
+    display:inline-block;
+    font-weight:bold;
+    color:#f00;
+}
+
+
+
+
+
+.salon-about-6{
+    padding:70px 0;
+    margin:0;
+    background-color:#fff;
+}
+
+.salon-about-6 h1{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    width:10%;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto 50px;
+    width:13%;
+    text-align:center;
+    color:#6699cc;
+    text-shadow:1px 1px 0 #99ffff;
+    border-left:5px double #6699cc;
+    border-right:3px double #6699cc;
+}
+
+.salon-about-6 h1.scroll{
+    // jQuert仕様-----------------------------
+    width:50%;
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.salon-about-6-fee{
+    padding:0;
+    margin:0 auto;
+    width:80%;
+}
+
+.top-fee{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto;
+    width:23%;
+    display:inline-block;
+    border:2px solid #6699cc;
+}
+
+.top-fee.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.top-fee-name-price{
+    padding:0;
+    margin:0;
+}
+
+.top-fee-name-price ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+    font-weight:bold;
+    border-bottom:1px solid #000080;
+}
+
+.top-fee-name-price span{
+    font-size:13px;
+    font-weight:normal;
+    color:#000;
+}
+
+.top-fee-name-price li:first-of-type{
+    background-color:#6699cc;
+    color:#fff;
+}
+
+.top-fee-name-price li:last-of-type{
+    color:#f00;
+    font-size:20px;
+}
+
+.top-fee-text{
+    padding:0 5px;
+    margin:0;
+    height:100px;
+}
+
+.salon-about-6-enroll{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    opacity:0;
+    transform:translate(0, 70px);
+    // ---------------------------------------
+    padding:30px 0;
+    margin:0;
+    text-align:center;
+}
+
+.salon-about-6-enroll.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    transform:translate(0, 0);
+    // ---------------------------------------
+}
+
+.salon-about-6-enroll a{
+    padding:5px 70px;
+    margin:0;
+    color:#ff9900;
+    background-color:#fff;
+    border:1px solid #ff9900;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.8s;
+}
+
+.salon-about-6-enroll a:hover{
+    color:#fff;
+    background-color:#ff9900;
+}
+
+
+
+
+.salon-about-7{
+    padding:70px 0;
+    margin:0;
+    // background-color:#99ffff;
+    background-image:url(/assets/profile-background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.salon-about-7 h1{
+    padding:0;
+    margin:0 auto;
+    width:40%;
+    text-align:center;
+    color:#fff;
+    text-shadow:3px 3px 0 #000080;
+}
+
+.salon-about-7-p{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    width:0.1px;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto;
+    border-bottom:4px solid #fff;
+    box-shadow:3px 3px 0 #000080;
+}
+
+.salon-about-7-p.scroll{
+    // jQuert仕様-----------------------------
+    width:50%;
+    // ---------------------------------------
+}
+
+.top-profile{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    // ---------------------------------------
+    padding:0;
+    margin:100px auto 0;
+    width:70%;
+    background-color:#fff;
+    border:5px ridge #6699ff;
+    color:#000080;
+}
+
+.top-profile span.scroll{
+    // jQuert仕様-----------------------------
+    background-color:#ffff33;
+    // ---------------------------------------
+}
+
+.top-profile-image{
+    padding:0;
+    margin:0;
+    width:49%;
+    height:300px;
+    display:inline-block;
+}
+
+.top-profile-image img{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:300px;
+}
+
+.top-profile-detail{
+    padding:0;
+    margin:0;
+    width:49%;
+    height:300px;
+    display:inline-block;
+}
+
+.top-profile-detail ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.top-profile-detail li{
+    padding:0;
+    margin:15px 0;
+}
+
+.top-profile-detail span{
+    padding:0;
+    margin:0;
+}
+
+.top-profile-country{
+    padding:0 10px;
+    margin:20px 0 0 0;
+    text-align:center;
+}
+
+.top-profile-country ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.top-profile-country span{
+    padding:0;
+    margin:0;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.top-profile-career{
+    padding:0 10px;
+    margin:20px 0 0 0;
+    text-align:center;
+}
+
+.top-profile-career ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.top-profile-career span{
+    padding:0;
+    margin:0;
+    font-size:20px;
+    font-weight:bold;
+}
+
+
+
+
+.salon-about-8{
+    padding:60px 0 100px;
+    margin:0;
+    background-color:#fff;
+}
+
+.salon-about-8 h2{
+    padding:0;
+    margin:0 auto;
+    width:40%;
+    color:#000080;
+    text-align:center;
+    // text-shadow:2px 2px 0 #6699cc;
+}
+
+.salon-about-8-p{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    width:0.1%;
+    // ---------------------------------------
+    padding:0;
+    margin:0 auto;
+    border-bottom:3px solid #6699cc;
+}
+
+.salon-about-8-p.scroll{
+    // jQuert仕様-----------------------------
+    transition:1s;
+    width:35%;
+    // ---------------------------------------
+}
+
+.salon-about-8-sub{
+    padding:0;
+    margin:100px auto 0;
+    width:80%;
+}
+
+.enroll-area, .contact-area, .wanted-area{
+    padding:0 0 30px 0;
+    margin:0 0 0 20px;
+    width:30%;
+    display:inline-block;
+    text-align:center;
+    background-color:#fff;
+    border-radius:5px;
+}
+
+.enroll-area p, .contact-area p, .wanted-area p{
+    padding:20px 0 40px;
+    margin:0;
+}
+
+.enroll-area{
+    // jQuert仕様-----------------------------
+    transition:0.8s;
+    transform:translate(0, 80px);
+    opacity:0;
+    // ---------------------------------------
+    border:5px double #ff9900;
+    box-shadow:3px 3px 0 #ff9900;
+}
+
+.enroll-area.scroll{
+    // jQuert仕様-----------------------------
+    transform:translate(0, 0);
+    opacity:1;
+    // ---------------------------------------
+}
+
+.enroll-area a{
+    padding:5px 30px;
+    margin:0;
+    color:#ff9900;
+    border:1px solid #ff9900;
+    border-radius:5px;
+}
+
+.contact-area{
+    // jQuert仕様-----------------------------
+    transition:1.1s;
+    transform:translate(0, 80px);
+    opacity:0;
+    // ---------------------------------------
+    border:5px double #6699cc;
+    box-shadow:3px 3px 0 #3399ff;
+}
+
+.contact-area.scroll{
+    // jQuert仕様-----------------------------
+    transform:translate(0, 0);
+    opacity:1;
+    // ---------------------------------------
+}
+
+.contact-area a{
+    padding:5px 30px;
+    margin:0;
+    color:#6699cc;
+    border:1px solid #6699cc;
+    border-radius:5px;
+}
+
+.wanted-area{
+    // jQuert仕様-----------------------------
+    transition:1.5s;
+    transform:translate(0, 80px);
+    opacity:0;
+    // ---------------------------------------
+    border:5px double #3cb371;
+    box-shadow:3px 3px 0 #33cc00;
+}
+
+.wanted-area.scroll{
+    // jQuert仕様-----------------------------
+    transform:translate(0, 0);
+    opacity:1;
+    // ---------------------------------------
+}
+
+.wanted-area a{
+    padding:5px 30px;
+    margin:0;
+    color:#3cb371;
+    border:1px solid #3cb371;
+    border-radius:5px;
+}
+
+.enroll-area a, .contact-area a, .wanted-area a{
+    text-decoration:none;
+    background-color:#fff;
+}
+
+.salon-about-8-text{
+    // jQuert仕様-----------------------------
+    transition:2s;
+    opacity:0;
+    // ---------------------------------------
+    padding:0;
+    margin:40px auto 0;
+    width:80%;
+    border-top:1px dotted #000080;
+    border-bottom:1px dotted #000080;
+}
+
+.salon-about-8-text.scroll{
+    // jQuert仕様-----------------------------
+    opacity:1;
+    // ---------------------------------------
+}
+
+.salon-about-8-text ul{
+    padding:0;
+    margin:0 auto;
+    width:90%;
+}
+
+.salon-about-8-text li{
+    padding:0;
+    margin:10px 0;
+}
+
+
+
+// ---------スクロールエリア-----------
+
+#about-scroll, #event-scroll, #news-scroll, #fee-scroll, #profile-scroll, #enroll-scroll{
+    padding:0;
+    margin:0 0 80px 0;
+}
+
+// ---------------------------------------
+
 
 }
 /*ここまでがPC用サイズ-----------------------------------------------------------------------------*/

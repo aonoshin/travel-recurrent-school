@@ -1,0 +1,49 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2><span>T</span>ravel <span>R</span>ecurrent <span>S</span>chool</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", destroy_user_session_path, :method => "delete", data: {confirm:"ログアウトしますか？"} %></li>
+              <li>／</li>
+              <li><%= link_to "ADMIN", "/admins" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="news-new">
+    <div class="news-new-title">
+        <h1>お知らせ作成</h1>
+    </div>
+    <div class="news-new-main">
+        <%= form_for @news do |n| %>
+          <%= n.hidden_field :user_id, required: true, :value => current_user.id %>
+          <p>－内容－</p>
+          <span>※必須</span><br>
+          <%= n.text_area :content, :class => "news-content" %>
+          <ul class="news-check-box">
+              <li>－掲載の有無－</li>
+              <span>※掲載する場合はチェックを入れてください。</span><br>
+              <li><%= label_tag :release, "掲載する" %></li>
+              <li><%= n.check_box :release, {}, "1", "0" %></li>
+          </ul>
+          <div class="news-new-btn-area">
+              <ul>
+                  <li><%= n.submit "作成する", :class => "news-new-btn", data: {confirm: "作成してもよろしいですか？"} %></li>
+                  <li><%= link_to "一覧へ戻る", "/news" %></li>
+              </ul>
+          </div>
+        <% end %>
+    </div>
+</div>

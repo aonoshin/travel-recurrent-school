@@ -1,3 +1,154 @@
-// Place all the styles related to the admins controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*ここからスマホ用サイズ-----------------------------------------------------------------------------*/
+@media(max-width:767px){
+
+// [indexエリア]
+
+.admin-index-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.admin-index-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.admin-index-main ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+
+.admin-index-main li{
+    padding:5px 0;
+    margin:0;
+    background-color:#66ffcc;
+    border-top:1px solid #080000;
+}
+
+.admin-index-main li:hover{
+    opacity:0.3;
+}
+
+.admin-index-main a{
+    padding:10px 0;
+    margin:0;
+    text-decoration:none;
+    font-size:25px;
+    color:#fff;
+    text-shadow:1px 1px 0 #000;
+    display:block;
+}
+
+
+}
+/*ここまでがスマホ用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからタブレット用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:768px) and (max-width:1024px){
+
+// [indexエリア]
+
+.admin-index-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.admin-index-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.admin-index-main ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+
+.admin-index-main li{
+    padding:5px 0;
+    margin:0;
+    background-color:#66ffcc;
+    border-top:1px solid #080000;
+}
+
+.admin-index-main li:hover{
+    opacity:0.3;
+}
+
+.admin-index-main a{
+    padding:10px 0;
+    margin:0;
+    text-decoration:none;
+    font-size:25px;
+    color:#fff;
+    text-shadow:1px 1px 0 #000;
+    display:block;
+}
+
+
+}
+/*ここまでがタブレット用サイズ-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*ここからPC用サイズ-----------------------------------------------------------------------------*/
+@media(min-width:1025px){
+
+// [indexエリア]
+
+.admin-index-title{
+    background-color:#99ffff;
+    text-align:center;
+}
+
+.admin-index-title h1{
+    padding:0;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #ccc;
+}
+
+.admin-index-main ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+
+.admin-index-main li{
+    padding:5px 0;
+    margin:0;
+    background-color:#66ffcc;
+    border-top:1px solid #080000;
+}
+
+.admin-index-main li:hover{
+    opacity:0.3;
+}
+
+.admin-index-main a{
+    padding:10px 0;
+    margin:0;
+    text-decoration:none;
+    font-size:25px;
+    color:#fff;
+    text-shadow:1px 1px 0 #000;
+    display:block;
+}
+
+
+}
+/*ここまでがPC用サイズ-----------------------------------------------------------------------------*/

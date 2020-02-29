@@ -4,7 +4,7 @@
     </div>
     <div class="navbar-title">
         <p>－日常に旅の学びと喜びを－</p>
-        <h2>Travel Recurrent School</h2>
+        <h2><span>T</span>ravel <span>R</span>ecurrent <span>S</span>chool</h2>
     </div>
     <div class="toggle-btn">
         <i class="fas fa-bars"></i>
@@ -14,7 +14,9 @@
             <li><%= link_to "TOP", "/" %></li>
             <% if user_signed_in? %>
               <li>／</li>
-              <li><%= link_to "LOG AUTO", "/" %></li>
+              <li><%= link_to "LOG AUTO", destroy_user_session_path, :method => "delete", data: {confirm:"ログアウトしますか？"} %></li>
+              <li>／</li>
+              <li><%= link_to "ADMIN", "/admins" %></li>
             <% end %>
         </ul>
     </div>

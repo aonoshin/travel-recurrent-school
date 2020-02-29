@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  
-  get 'admins/index'
 
   root "tops#index"
   
@@ -11,9 +9,12 @@ Rails.application.routes.draw do
   
   resources :faculties
   resources :events
-  resources :informations
+  # resources :informations
   resources :photos
   resources :users
   resources :admins
+  resources :fees
+  resources :news
+  resources :profiles
   
 end

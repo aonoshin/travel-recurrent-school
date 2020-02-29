@@ -1,0 +1,55 @@
+<div class="navbar">
+    <div class="navbar-logo">
+        <p>Logo</p>
+    </div>
+    <div class="navbar-title">
+        <p>－日常に旅の学びと喜びを－</p>
+        <h2><span>T</span>ravel <span>R</span>ecurrent <span>S</span>chool</h2>
+    </div>
+    <div class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-list">
+        <ul>
+            <li><%= link_to "TOP", "/" %></li>
+            <% if user_signed_in? %>
+              <li>／</li>
+              <li><%= link_to "LOG AUTO", destroy_user_session_path, :method => "delete", data: {confirm:"ログアウトしますか？"} %></li>
+              <li>／</li>
+              <li><%= link_to "ADMIN", "/admins" %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+
+<div class="fee-new">
+    <div class="fee-new-title">
+        <h1>学費の設定</h1>
+    </div>
+    <div class="fee-new-main">
+        <%= form_for @fee do |f| %>
+          <%= f.hidden_field :user_id, require: true, :value => current_user.id %>
+          <p>－ジャンル名－</p>
+          <span>※必須</span><br>
+          <%= f.text_field :name, :class => "fee-name" %>
+          <p>－価格－</p>
+          <span>※必須</span><br>
+          <%= f.text_field :price, :class => "fee-price" %>
+          <p>－詳細－</p>
+          <span>※必須</span><br>
+          <%= f.text_area :text, :class => "fee-text" %>
+          <ul class="fee-check-box">
+              <li>－掲載の有無－</li>
+              <span>※掲載する場合はチェックを入れてください。</span><br>
+              <li><%= label_tag :release, "掲載する" %></li>
+              <li><%= f.check_box :release, {}, "1", "0" %></li>
+          </ul>
+          <div class="fee-new-btn-area">
+              <ul>
+                  <li><%= f.submit "作成する", :class => "fee-new-btn", data: {confirm: "作成してもよろしいですか？"} %></li>
+                  <li><%= link_to "一覧へ戻る", "/fees" %></li>
+              </ul>
+          </div>
+        <% end %>
+    </div>
+</div>

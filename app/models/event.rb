@@ -5,4 +5,5 @@ class Event < ApplicationRecord
     validates:place, {presence:true, length:{maximum:10}}
     validates:starttime, presence:true
     validates:endtime, presence:true
+    validates:day, presence:true
 end

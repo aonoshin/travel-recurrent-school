@@ -1,5 +1,8 @@
 class InformationsController < ApplicationController
   
+  before_action :authenticate_user!
+  before_action :admin_check
+  
   def index
     @informations = Information.all.order(updated_at: :desc)
   end
@@ -43,11 +46,20 @@ class InformationsController < ApplicationController
     end
   end
   
+  def destroy
+    @information = Information.find(params[:id])
+    if @information.destroy
+      flash[:notice] = "削除しました！"
+      redirect_to "/informations"
+    else
+      flash[:alert] = "削除できませんでした。"
+      redirect_to "/informations"
+    end
+  end
+  
   private
     def information_params
       params.require(:information).permit(:content, :release, :user_id).merge(user_id: current_user.id)
     end
-  
-  
   
 end
