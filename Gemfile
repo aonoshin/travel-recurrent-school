@@ -54,3 +54,4 @@ gem 'carrierwave'
 gem 'fog-aws'
 
 gem 'seed-fu', '~> 2.3'
+gem 'rails_12factor', group: :production
