@@ -20,8 +20,8 @@
 }
 
 .top-logo-position{
-    padding:25px;
-    margin:10px 0 0 15px;
+    padding:25px 28px;
+    margin:7px 0 0 15px;
     width:5%;
     position:relative;
     background-color:#ff0;
@@ -172,7 +172,7 @@
     transform:translate(-150px, 80px);
     opacity:0;
     // ---------------------------------------
-    width:15%;
+    width:25%;
 }
 
 .salon-introduction-airplane img.scroll{
@@ -229,6 +229,7 @@
     text-shadow:3px 3px 0 #000;
     border-left:3px double #000;
     border-right:3px double #000;
+    font-size:18px;
 }
 
 .salon-about h1.scroll{
@@ -260,7 +261,7 @@
 .salon-about-1 h2{
     margin:0 auto;
     padding:0 0 40px 0;
-    font-size:20px;
+    font-size:18px;
     text-align:center;
     color:#99ffff;
     text-shadow:2px 2px 0 #000;
@@ -270,7 +271,7 @@
     padding:0;
     margin:0 0 0 5px;
     width:48%;
-    height:250px;
+    height:190px;
     text-align:center;
     float:left;
     border-top:1px dotted #000;
@@ -280,9 +281,8 @@
 .salon-about-1-text p{
     padding:0;
     margin:5px;
-    font-size:15px;
+    font-size:13px;
     font-weight:bold;
-    line-height:1.8;
     color:#6699cc;
     text-shadow:1px 1px 0 #fff;
 }
@@ -290,7 +290,7 @@
 .salon-about-1-text span{
     padding:0;
     margin:0;
-    font-size:13px;
+    font-size:11px;
     color:#000080;
 }
 
@@ -299,14 +299,14 @@
     margin:0;
     float:left;
     width:49%;
-    height:250px;
+    height:190px;
 }
 
 .salon-about-1-image img{
     padding:0;
     margin:0;
     width:100%;
-    height:250px;
+    height:190px;
     border-radius:10px;
 }
 
@@ -341,14 +341,14 @@
     text-align:center;
     color:#66ffcc;
     text-shadow:2px 2px 0 #008000;
-    border-bottom:5px double #66ffcc;
+    font-size:18px;
 }
 
 .salon-about-2-text{
     padding:0;
     margin:0 5px 0 0;
     width:48%;
-    height:260px;
+    height:240px;
     text-align:center;
     float:right;
     border-top:1px dotted #000;
@@ -357,10 +357,9 @@
 
 .salon-about-2-text p{
     padding:0;
-    margin:10px 0 0 0;
-    font-size:15px;
+    margin:2px 0 0 0;
+    font-size:13px;
     font-weight:bold;
-    line-height:1.8;
     color:#6699cc;
     text-shadow:1px 1px 0 #000080;
 }
@@ -386,14 +385,14 @@
     margin:0;
     float:right;
     width:50%;
-    height:260px;
+    height:240px;
 }
 
 .salon-about-2-image img{
     padding:0;
     margin:0;
     width:100%;
-    height:260px;
+    height:240px;
     border-radius:10px;
 }
 
@@ -420,8 +419,7 @@
     text-align:center;
     color:#6699cc;
     text-shadow:2px 2px 0 #fff;
-    border-bottom:5px double #6699cc;
-    font-size:20px;
+    font-size:18px;
 }
 
 .salon-about-3 h2.scroll{
@@ -455,7 +453,7 @@
 .salon-about-3-text p{
     padding:0;
     margin:10px 0;
-    font-size:17px;
+    font-size:15px;
     font-weight:bold;
     line-height:1.8;
     color:#000;
@@ -475,7 +473,7 @@
     // ---------------------------------------
     padding:0;
     margin:50px auto;
-    width:80%;
+    width:90%;
     box-shadow:10px 10px 0 #6699cc;
     background-color:#fff;
     border-radius:3px;
@@ -494,7 +492,7 @@
     text-align:center;
     color:#6699cc;
     font-weight:bold;
-    font-size:20px;
+    font-size:18px;
     text-shadow:1px 1px 0 #99ffff;
 }
 
@@ -515,6 +513,7 @@
 .top-faculty-content{
     padding:5px;
     margin:0;
+    font-size:14px;
 }
 
 
@@ -530,20 +529,21 @@
 .salon-about-4 h1{
     // jQuert仕様-----------------------------
     transition:0.8s;
-    width:25%;
+    width:40%;
     // ---------------------------------------
     padding:0;
     margin:0 auto 50px;
     text-align:center;
     color:#66ffcc;
     text-shadow:1px 1px 0 #000;
-    border-left:5px double #008000;
+    border-left:3px double #008000;
     border-right:3px double #008000;
+    font-size:20px;
 }
 
 .salon-about-4 h1.scroll{
     // jQuert仕様-----------------------------
-    width:60%;
+    width:80%;
     background-color:#ffff33;
     // ---------------------------------------
 }
@@ -684,7 +684,7 @@
 .salon-about-5 h1{
     // jQuert仕様-----------------------------
     transition:0.8s;
-    width:25%;
+    width:40%;
     // ---------------------------------------
     padding:0;
     margin:0 auto 50px;
@@ -692,13 +692,14 @@
     text-align:center;
     color:#000080;
     text-shadow:1px 1px 0 #fff;
-    border-left:5px double #000080;
+    border-left:3px double #000080;
     border-right:3px double #000080;
+    font-size:20px;
 }
 
 .salon-about-5 h1.scroll{
     // jQuert仕様-----------------------------
-    width:70%;
+    width:80%;
     background-color:#ffff33;
     // ---------------------------------------
 }
@@ -738,6 +739,7 @@
     margin:0;
     font-weight:bold;
     color:#f00;
+    font-size:13px;
 }
 
 
@@ -753,7 +755,7 @@
 .salon-about-6 h1{
     // jQuert仕様-----------------------------
     transition:0.8s;
-    width:20%;
+    width:30%;
     // ---------------------------------------
     padding:0;
     margin:0 auto 50px;
@@ -761,13 +763,14 @@
     text-align:center;
     color:#6699cc;
     text-shadow:1px 1px 0 #99ffff;
-    border-left:5px double #6699cc;
+    border-left:3px double #6699cc;
     border-right:3px double #6699cc;
+    font-size:20px;
 }
 
 .salon-about-6 h1.scroll{
     // jQuert仕様-----------------------------
-    width:70%;
+    width:80%;
     background-color:#ffff33;
     // ---------------------------------------
 }
@@ -853,7 +856,7 @@
 }
 
 .salon-about-6-enroll a{
-    padding:5px 70px;
+    padding:10px 70px;
     margin:0;
     color:#ff9900;
     background-color:#fff;
@@ -891,7 +894,7 @@
     text-align:center;
     color:#fff;
     text-shadow:3px 3px 0 #000080;
-    font-size:25px;
+    font-size:20px;
 }
 
 .salon-about-7-p{
@@ -960,8 +963,8 @@
 
 .top-profile-detail li{
     padding:0;
-    margin:5px 0;
-    font-size:11.5px;
+    margin:3px 0;
+    font-size:11.3px;
 }
 
 .top-profile-detail span{
