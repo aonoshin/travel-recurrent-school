@@ -1,8 +1,12 @@
 /*ここからスマホ用サイズ-----------------------------------------------------------------------------*/
 @media(max-width:767px){
 
+#top-image-slide{
+    background-color:#eee;
+}
+
 #top-image-slide ul{
-    padding:0;
+    padding:80px 0;
     margin:0;
     position:relative;
 }
@@ -17,10 +21,14 @@
 #top-image-slide img{
     width:100%;
     height:400px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size:contain;
+    -o-background-size: cover;
 }
 
 .top-logo-position{
-    padding:25px 28px;
+    padding:23px;
     margin:7px 0 0 10px;
     width:5%;
     position:relative;
@@ -33,11 +41,12 @@
 .top-logo-position p{
     padding:0;
     margin:0;
+    font-size:12px;
 }
 
 .top-text-position{
     padding:0;
-    margin:30px 0 0 0;
+    margin:10px 0 0 0;
     width:40%;
     position:relative;
     text-align:center;
@@ -49,7 +58,7 @@
     margin:0;
     color:#ffff33;
     font-weight:bold;
-    font-size:12px;
+    font-size:11px;
     text-shadow:1px 1px 0 #000;
 }
 
@@ -67,7 +76,7 @@
 
 .top-enroll-position{
     padding:0;
-    margin:40px 5px 0 0;
+    margin:30px 5px 0 0;
     position:relative;
     text-align:center;
     float:right;
@@ -91,7 +100,7 @@
 
 #dummy-top{
     padding:0;
-    margin:300px 0 0 0;
+    margin:370px 0 0 0;
 }
 
 
@@ -156,7 +165,7 @@
 .salon-introduction-title span.scroll{
     // jQuert仕様-----------------------------
     color:#ffff33;
-    text-shadow:5px 5px 2px #000080;
+    text-shadow:3px 3px 0 #000080;
     font-size:40px;
     // ---------------------------------------
 }
@@ -212,10 +221,11 @@
 
 
 .salon-about{
+    margin:50px 0 0 0;
     text-align:center;
-    background-color:#eee;
-    height:200px;
+    height:170px;
     font-size:15px;
+    border-top:1px solid #000080;
 }
 
 .salon-about h1{
@@ -247,8 +257,8 @@
     // ---------------------------------------
     padding:0;
     margin:0;
-    background-color:#eee;
-    height:450px;
+    height:350px;
+    border-bottom:1px solid #000080;
 }
 
 .salon-about-1.scroll{
@@ -261,10 +271,10 @@
 .salon-about-1 h2{
     margin:0 auto;
     padding:0 0 40px 0;
-    font-size:18px;
+    font-size:17px;
     text-align:center;
-    color:#99ffff;
-    text-shadow:2px 2px 0 #000;
+    color:#000080;
+    text-shadow:2px 2px 0 #99ffff;
 }
 
 .salon-about-1-text{
@@ -339,8 +349,8 @@
     margin:0 auto 50px;
     width:80%;
     text-align:center;
-    color:#66ffcc;
-    text-shadow:2px 2px 0 #008000;
+    color:#008000;
+    text-shadow:2px 2px 0 #66ffcc;
     font-size:18px;
 }
 
