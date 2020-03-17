@@ -73,13 +73,13 @@ $(document).on('turbolinks:load', window).scroll(function(){
 
 
 // [マウスを重ねると文字が変わる機能]
-$(window).on('turbolinks:load', function(){
-    $('.top-enroll-position a').hover(function(){
-        $(this).html('入学する');
-    }, function(){
-        $(this).html('Enroll in School');
-    });
-});
+// $(window).on('turbolinks:load', function(){
+//     $('.top-enroll-position a').hover(function(){
+//         $(this).html('入学する');
+//     }, function(){
+//         $(this).html('Enroll in School');
+//     });
+// });
 
 $(window).on('turbolinks:load', function(){
     $('.salon-about-6-enroll a').hover(function(){
