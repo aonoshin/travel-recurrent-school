@@ -11,19 +11,19 @@ $(window).on('turbolinks:load',function(){
 });
 
 
-// [TOP画面スライドショー機能]
+// [TOP画面スライドショー機能/スマホのみ]
 $(window).on('turbolinks:load',function(){
-    let count = $('#top-image-slide li').length;
+    let count = $('#top-image-slide .sp-ver > li').length;
     let current = 1;
     let next = 2;
     let interval = 4000;
     let duration = 1000;
     let timer;
-    $('#top-image-slide li:not(:first-child)').hide();
+    $('#top-image-slide .sp-ver > li:not(:first-child)').hide();
     timer = setInterval(slideTimer, interval);
     function slideTimer(){
-        $('#top-image-slide li:nth-child('+ current +')').fadeOut(duration);
-        $('#top-image-slide li:nth-child('+ next +')').fadeIn(duration);
+        $('#top-image-slide .sp-ver > li:nth-child('+ current +')').fadeOut(duration);
+        $('#top-image-slide .sp-ver > li:nth-child('+ next +')').fadeIn(duration);
         current = next;
         next = ++next;
         if(next > count){
@@ -41,6 +41,7 @@ $(window).on('turbolinks:load',function(){
         return false;
     });
 });
+
 
 
 // [スムーススクロール機能]
